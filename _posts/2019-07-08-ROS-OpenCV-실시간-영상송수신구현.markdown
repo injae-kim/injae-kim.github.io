@@ -5,7 +5,7 @@ date:   2019-07-08 10:00:00
 author: injae Kim
 categories: ROS
 tags:	ROS OpenCV 영상송수신
-cover:  "/assets/jared-brashier-duNHkmSkW6M-unsplash.jpg"
+cover:  "/assets/ROS/background.jpg"
 ---
 
 ##  ROS 에서 OpenCV  로 실시간 영상 송수신 구현 방법
@@ -455,7 +455,7 @@ $ rosrun opencv opencv_sub
 
 #### 실행 결과
 
-  <img src="/assets/ros-opencv.jpg" title="ros-opencv result">
+  <img src="/assets/ROS/ros-opencv.jpg" title="ros-opencv result">
 
 상단의 터미널에선 `opencv_pub `노드를 실행하였으며 좌측이 원본영상, 우측이 압축된 영상 입니다. 압축된 영상을 실제로 확인해보시면 해상도가 상당히 떨어지는 것 을 알 수 있습니다.
 
@@ -467,7 +467,7 @@ $ rosrun opencv opencv_sub
 
 ---
 
-  <img src="/assets/rosgraph.png" title="ros-opencv rqt_graph">
+  <img src="/assets/ROS/rosgraph.png" title="ros-opencv rqt_graph">
 
 실행 결과를 `$ rqt_graph` 로 확인한 결과 입니다. 정상적으로 `pub`, `sub` 노드가 실행되어 있으며 `/camera/image ` 로 등록된 메시지가 잘 전달되고 있는 것을 확인 할 수 있습니다.
 

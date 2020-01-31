@@ -161,7 +161,7 @@ social:
     username: TheBenCentra                # (User) Name to display in the footer link
     url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
     desc: Follow me on Twitter            # Description to display as link title, etc
-    share: true                           # Include in the "Share" section of posts
+    share: false                           # Include in the "Share" section of posts
 ```
 
 ### Social Protocols
