@@ -25,7 +25,7 @@ permalink: /about/
 
 - 청각장애인이 운행하는 [고요한택시](http://www.goyohantaxi.com/) 안드로이드 개발자 (2018 ~ 2019)
     - [about 고요한택시](http://news1.kr/articles/?3786791)
-- 해양 유출 기름 회수 로봇 [쉐코](sheco.co) SW 엔지니어 (2019 ~)
+- 해양 유출 기름 회수 로봇 [쉐코](http://sheco.co) SW 엔지니어 (2019 ~)
     - [about 쉐코](https://www.yna.co.kr/view/AKR20190628149500065?input=1195m)
 - 관심분야: `Computer Vision`, `ML / DL` , `Clean Code & Architecture `, `Concurrent programming`
 
