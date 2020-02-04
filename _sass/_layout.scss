@@ -32,10 +32,12 @@ code {
 	display: inline-block;
 	border-radius: 3px;
 	padding: 0 3px;
+	font-family: $hljs-font-family;
 }
 
 pre code.hljs {
 	font-size: modular-scale(-1);
+	font-family: $hljs-font-family;
 }
 
 .page-divider {
