@@ -14,8 +14,6 @@ permalink: /about/
 
 ## 김인제
 
-#### injae kim, SW Engineer
-
 #### Always be Self-Motivated Team Player !
 
 클린코드와 수학, 엔지니어링을 좋아합니다. <br/>
@@ -24,8 +22,10 @@ permalink: /about/
 개인적으로는 탁월한 사람, 팀적으로는 정보를 공유하고 이끄는 사람이 되고자 합니다.<br/>
 
 - 청각장애인이 운행하는 [고요한택시](http://www.goyohantaxi.com/) 안드로이드 개발자 (2018 ~ 2019)
+    - 고요한택시 서비스 애플리케이션 개발, web fullstack 개발
     - [about 고요한택시](http://news1.kr/articles/?3786791)
-- 해양 유출 기름 회수 로봇 [쉐코](http://sheco.co) SW 엔지니어 (2019 ~)
+- 청청바다를 공유하는 팀 [쉐코](http://sheco.co) SW 엔지니어 (2019 ~)
+    - 해양 유출 기름 회수 로봇 SW 개발
     - [about 쉐코](https://www.yna.co.kr/view/AKR20190628149500065?input=1195m)
 - 관심분야: `Computer Vision`, `ML / DL` , `Clean Code & Architecture `, `Concurrent programming`
 
