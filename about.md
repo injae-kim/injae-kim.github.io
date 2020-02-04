@@ -6,14 +6,25 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}/assets/profile.jpeg" title="Profile Picture" class="profile">
 
-<!-- INJAE is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
+<br/>
 
-This page is a good place to write about yourself, your project, your product, or whatever it is your site is for. You can replace the image above, or you can get rid of it entirely. 
+---
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/). And you can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll) -->
+<br/>
 
-작성중입니다..
+## 김인제
 
-[centrarium]: https://github.com/bencentra/centrarium
-[bencentra]: http://bencentra.com
-[jekyll]: https://github.com/jekyll/jekyll
+#### injae kim, SW Engineer
+
+클린코드와 수학, 엔지니어링을 좋아합니다.
+현실의 문제들을 코드로 해결하면서 즐거움을 느낍니다.
+팀과 함께 일하고 같이 성장하는 것 을 지향합니다.
+개인적으로는 탁월한 사람, 팀적으로는 정보를 공유하고 이끄는 사람이 되고자 합니다.
+
+- 청각장애인이 운행하는 [고요한택시](http://www.goyohantaxi.com/) 안드로이드 개발자 (2018 ~ 2019)
+    - [about 고요한택시](http://news1.kr/articles/?3786791)
+- 청청바다를 공유하는 팀 [쉐코](sheco.co) SW 엔지니어 (2019 ~)
+    - [about 쉐코](https://www.yna.co.kr/view/AKR20190628149500065?input=1195m)
+
+#### Always be Self-Motivated Team Player !
+
