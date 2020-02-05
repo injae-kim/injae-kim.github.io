@@ -1,4 +1,4 @@
-<img src="/home/helios789/injae-kim.github.io/%7B%7B%20site.baseurl%20%7D%7D/assets/profile.jpeg" title="Profile Picture" class="profile">
+<img src="https://injae-kim.github.io/assets/profile.jpeg" title="Profile Picture" class="profile">
 
 <br/>
 
