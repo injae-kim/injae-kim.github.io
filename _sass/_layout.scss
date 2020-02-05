@@ -19,6 +19,13 @@ html, body {
 	width: 100%;
 }
 
+blockquote {
+	margin: 0;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-left: 5px solid $turquoise;
+}
+
 ol.default {
   @extend %default-ol;
 }
