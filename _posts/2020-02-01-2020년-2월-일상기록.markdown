@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "2020년 2월 프로그래머의 일기장"
+date:   2019-02-01 10:00:00
+author: injae Kim
+categories: Life
+tags:	Life 프로그래머 일상
+cover:  "/assets/ROS/background.jpg"
+---
+
+##  2020년 2월 일상 기록
+---
+
+#### 2월 1일 (토)
+
+- 알고리즘 스터디 (11시 ~ 2시)
+- 알고리즘 공부 (백트래킹)
+
+<br/>
+
+#### 2월 3일 (월)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - Hough transform
+  - Epipolar geometry
+  - Extrinsic, Intrinsic camera parameter
+
+- [Algae Detection Using Computer Vision and Deep Learning](https://arxiv.org/abs/1811.10847) 논문 리딩
+
+- [알고리즘 종만북](http://mobile.kyobobook.co.kr/showcase/book/KOR/9788966260546) 완전탐색 문제풀이
+
+<br/>
+
+#### 2월 4일 (화)
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - Homographies and mosaics
+  - Essential matrix, Fundamental matrix
+  - Extrinsic, Intrinsic camera parameter
+
+- 컴퓨터 비전 기반 해상 위의 녹조, 적조 탐색 기법에 관한 논문, 관련 선행 연구 조사
+
+- [알고리즘 종만북](http://mobile.kyobobook.co.kr/showcase/book/KOR/9788966260546) 동적계획법 공부
+  - [원주율 외우기](https://www.algospot.com/judge/problem/read/PI)
+  - [최장증가수열](https://www.algospot.com/judge/problem/read/LIS)
+
+<br/>
+
+#### 2월 5일 (수)
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - SIFT descriptor
+  - RANSAC
+  - Lightness and shading
+  - Optical Flow: Lucas and Kanade
+
+- 컴퓨터 비전 기반 해상 위의 녹조, 적조 탐색 기법에 관한 논문, 관련 선행 연구 조사
+
+- 텍스쳐 기반 anomaly detection 방법론 조사
+
+- [알고리즘 종만북](http://mobile.kyobobook.co.kr/showcase/book/KOR/9788966260546) 동적계획법 공부
+  - [타일링](https://www.algospot.com/judge/problem/read/TILING2)
+  - [폴리오미노](https://www.algospot.com/judge/problem/read/POLY)
+  - [두니발 박사의 탈옥](https://www.algospot.com/judge/problem/read/NUMB3RS)

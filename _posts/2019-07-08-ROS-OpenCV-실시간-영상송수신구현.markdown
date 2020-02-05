@@ -3,12 +3,12 @@ layout: post
 title:  "ROS 에서 OpenCV로 실시간 영상 송수신 구현 방법"
 date:   2019-07-08 10:00:00
 author: injae Kim
-categories: Robot
+categories: Robot_operating_system
 tags:	ROS OpenCV 영상송수신
 cover:  "/assets/ROS/background.jpg"
 ---
 
-##  ROS 에서 OpenCV  로 디바이스간 실시간 영상 송수신 구현 방법
+##  ROS 에서 OpenCV  로 디바이스간 실시간 영상 송수신 구현
 ---
 
 ## 목적
