@@ -22,6 +22,6 @@
   - [about 쉐코](https://www.yna.co.kr/view/AKR20190628149500065?input=1195m)
 - 관심분야: `Computer Vision`, `ML / DL` , `Clean Code & Architecture `, `Concurrent programming`, `Optimization`, `Social Impact`
 
-작성중
+작성중 입니다..
 
 
