@@ -24,7 +24,7 @@ permalink: /about/
 팀과 함께 일하고 같이 성장하는 것 을 지향합니다.<br/>
 
 더 좋은 세상을 만들고 싶다는 꿈을 가지고 청각장애인이 운행하는 [고요한택시](http://www.goyohantaxi.com/) 와 해양 유출 기름 회수 로봇 [쉐코](http://sheco.co)
-2개의 소셜벤처에 창업멤버로 참여해 서비스를 개발하였고 서비스 런칭 후 유지보수까지 창업의 모든 단계와 시행착오를 직접 부딪히며 겪어보았습니다.
+2개의 소셜벤처에 창업멤버로 참여해 서비스를 개발하였고 서비스 런칭 후 유지보수까지 다양한 경험과 시행착오를 직접 부딪히며 겪어보았습니다.
 
 팀 단위 협업과 정보의 공유를 너무나도 좋아합니다. 제가 겪었던 어려운 점이나 문제점들을 남이 똑같이 겪지 않길 바라는 마음으로 제가 삽질한 경험을 마음껏 문서화하여 공유합니다.
 
@@ -43,27 +43,40 @@ permalink: /about/
 ## Experience
 - 청각장애인이 운행하는 [고요한택시](http://www.goyohantaxi.com/) 안드로이드 개발자 (2018 ~ 2019)
     - 고요한택시 서비스 애플리케이션 개발, web fullstack 개발
-    - [about 고요한택시](http://news1.kr/articles/?3786791)
+    - [고요한택시 관련 기사](http://news1.kr/articles/?3786791), [고요한택시 관련 포스트](https://blog.naver.com/kead1/221677118935)
 - 청청바다를 공유하는 팀 [쉐코](http://sheco.co) SW 엔지니어 (2019 ~)
     - 해양 유출 기름 회수 로봇, 유출유 인식 SW 개발
-    - [about 쉐코](https://www.yna.co.kr/view/AKR20190628149500065?input=1195m)
+    - [쉐코 관련 기사](https://www.yna.co.kr/view/AKR20190628149500065?input=1195m), [쉐코 소개 영상](https://www.youtube.com/watch?v=zOSeQCItZeU)
 
 ---
 
 ## Education
 
-- 동국대학교 컴퓨터공학 전공 (2020 졸업 예정)
-- 들었던 강의들 작성...
+- 동국대학교 컴퓨터공학 전공 (2021. 02 졸업 예정)
 
 ---
 
 ## Awards
-- 작성 중 입니다...
+- 2018 동국대학교 프로그래밍 경진대회 장려상
+- [동국대, 군위군 관학협력사업 우수과제 최우수](https://www.kyongbuk.co.kr/news/articleView.html?idxno=1049167)
+- 동국대학교 창업장학생 선정
+- 고요한택시
+  - [2019 Enactus 국내대회 우승](https://www.venturesquare.net/786727)
+  - [2019 Enactus WorldCup Semi-Final Round 3위](https://enactus.org/worldcup/results-2014/)
+- 쉐코
+  - 제로원데이
+  - 삼성투마로우 솔루션
+  - 중부발전
+  - Splash
+  - 사회적기업 육성사업, 청년창업사관학교 지원사업 선정
 
 ---
 
 ## Project
-- 작성 중 입니다...
+- Phaser.js
+- DNA matching
+- Text-Upsidown-Checker
+- Oil-Spill-Detection
 
 ---
 
