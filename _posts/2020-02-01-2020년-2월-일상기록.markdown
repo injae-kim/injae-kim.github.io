@@ -50,7 +50,7 @@ cover:  "/assets/ROS/background.jpg"
   - SIFT descriptor
   - RANSAC
   - Lightness and shading
-  - Optical Flow: Lucas and Kanade
+  - Introduction to motion
 
 - 컴퓨터 비전 기반 해상 위의 녹조, 적조 탐색 기법에 관한 논문, 관련 선행 연구 조사
 
@@ -60,3 +60,16 @@ cover:  "/assets/ROS/background.jpg"
   - [타일링](https://www.algospot.com/judge/problem/read/TILING2)
   - [폴리오미노](https://www.algospot.com/judge/problem/read/POLY)
   - [두니발 박사의 탈옥](https://www.algospot.com/judge/problem/read/NUMB3RS)
+
+<br/>
+
+#### 2월 6일 (목)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - Optical Flow: Lucas and Kanade
+  - Hierarchical LK
+
+- [Algae Detection Using Computer Vision and Deep Learning](https://arxiv.org/abs/1811.10847) 논문 스터디 발표자료 ppt 제작
+
+- 백준 알고리즘 문제풀이
+  - [맞춰봐](https://www.acmicpc.net/problem/1248)
