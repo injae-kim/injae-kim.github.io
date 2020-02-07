@@ -77,6 +77,7 @@ permalink: /about/
 - DNA matching
 - Text-Upsidown-Checker
 - Oil-Spill-Detection
+- 따릉이~
 
 ---
 
