@@ -59,6 +59,9 @@
 <script type="text/javascript">
 $(document).ready(function() {
   // Default syntax highlighting
+  hljs.configure({
+    tabReplace: '    ' // 4 space for tab width
+  });
   hljs.initHighlightingOnLoad();
 
   // Header
