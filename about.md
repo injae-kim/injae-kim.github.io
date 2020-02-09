@@ -60,8 +60,9 @@ permalink: /about/
 
 ## Awards
 - [2018 동국대학교 프로그래밍 경진대회 장려상](https://injae-kim.github.io/assets/about_me/프로그래밍경진대회.jpg)
-- [2018 동국대, 군위군 문화관광 활성화 관학협력사업 과제 최우수상](https://injae-kim.github.io/assets/about_me/군위군_산학협력.jpg)
-  - [블록체인 기반 홍보 콘텐츠 제공 보상 플랫폼을 이용한 군위군 관광홍보 활성화](https://injae-kim.github.io/assets/about_me/캡스톤디자인.jpg)
+- [2018 군위군 문화관광 활성화을 위한 관학협력사업 과제 최우수상](https://injae-kim.github.io/assets/about_me/군위군_산학협력.jpg)
+  - 블록체인 기반 홍보 콘텐츠 제공에 대한 보상 플랫폼 개발
+  - [ICIP & 캡스톤 디자인 결과발표 최우수상](https://injae-kim.github.io/assets/about_me/캡스톤디자인.jpg)
   - [관련 기사](https://www.kyongbuk.co.kr/news/articleView.html?idxno=1049167)
 - [2018 동국대학교 창업장학생 선정](https://injae-kim.github.io/assets/about_me/장학증서.jpg)
 - 고요한택시

@@ -4,7 +4,7 @@ title:  "2020년 2월 프로그래머의 일기장"
 date:   2019-02-01 10:00:00
 author: injae Kim
 categories: Life
-tags:	Life 프로그래머 일상
+# tags:	Life 프로그래머 일상
 cover:  "https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
 ---
 
