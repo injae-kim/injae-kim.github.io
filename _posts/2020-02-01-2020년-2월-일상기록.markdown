@@ -24,9 +24,7 @@ cover:  "https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.
   - Hough transform
   - Epipolar geometry
   - Extrinsic, Intrinsic camera parameter
-
 - [Algae Detection Using Computer Vision and Deep Learning](https://arxiv.org/abs/1811.10847) 논문 리딩
-
 - [알고리즘 종만북](http://mobile.kyobobook.co.kr/showcase/book/KOR/9788966260546) 완전탐색 문제풀이
 
 <br/>
@@ -73,3 +71,26 @@ cover:  "https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.
 
 - 백준 알고리즘 문제풀이
   - [맞춰봐](https://www.acmicpc.net/problem/1248)
+
+<br/>
+
+#### 2월 7일 (금)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - Introduction to Tracking
+  - The Kalman filter, 그 유명한 칼만필터.. 내용이 너무 좋다. 아이디어와 식 유도, 증명을 2월 안에 포스팅 할 것!
+  - Bayes filters
+- [Algae Detection Using Computer Vision and Deep Learning](https://arxiv.org/abs/1811.10847) 논문 스터디 발표
+- 블로그 글 수정
+
+<br/>
+
+#### 2월 9일 (일)
+
+- 노션 사용법 검색, 쉐코 팀에서 앞으로 노션을 메인 일감 관리 툴로 사용하기로 결정! 다음주부터 도입 예정이다.
+  - 기존에 사용해봤던 레드마인, 프리드캠프, 테스크 월드 보다 훨씬 깔끔한 UI, 디자인, 위키 기능이 너무 마음에 든다. 마크다운에 익숙한 개발자라면 무조건 환영일 듯!
+
+- 백준 13334번 철로 문제 해설 블로그 글 작성
+  - 집에 있으니 아무것도 안할것 같아서 카페로 나와서 알고리즘 공부했다
+- codeforce div.2 참석, 올해 하반기 전에 codeforce 퍼플 달성을 목표로 공부!
+

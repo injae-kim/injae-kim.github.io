@@ -13,7 +13,8 @@ cover:  "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1
 
 [문제 링크](https://www.acmicpc.net/problem/13334)
 
-solved.ac 기준 골드 2 난이도의 문제입니다. `우선순위 큐`, `정렬` 을 사용하여 해결하였습니다.
+solved.ac 기준 `골드 2 난이도`의 문제입니다. `우선순위 큐`, `정렬` 을 사용하여 해결하였습니다. 
+문제에 대한 접근 아이디어와 우선순위큐, 정렬과 같은 기본적인 내용에 대한 이해와 구현력이 뒷받침 되어야 풀 수 있는 문제였습니다. 개인적으로 문제 접근 아이디어를 떠올리는 과정이 어려웠습니다.
 
 #### 문제
 
@@ -70,4 +71,222 @@ solved.ac 기준 골드 2 난이도의 문제입니다. `우선순위 큐`, `정
 
 ----
 
-작성중 입니다..
+**우리가 구하려는 답은 입력받은  `집-사무실 거리` 가 `길이가 정해진 철로` 에 언제 가장 많이 포함될 까? 입니다.**
+
+`집-사무실` 의 시작점, 끝 점 좌표는 입력으로 모두 주어지므로 결국, 구해야 하는건 `길이가 정해진 철로` 의 `시작점` 의 좌표 입니다. `철로의 길이`는 입력으로 정해지므로 `철로의 시작점`만 정하면, 그 철로에 포함되는 사람들의 수를 구할 수 있겠죠! 
+
+그렇다면, 우선 철로의 시작점 부터 차근차근 접근해 봅시다.
+
+<br/>
+
+#### 철로의 시작점 구하기
+
+---
+
+문제의 입력 조건에 따르면, 집 과 사무실의 시작점은 `−100,000,000이상, 100,000,000이하의 정수` 입니다. 
+따라서 우리가 철로를 설치할 수 있는 시작점도 `−100,000,000이상, 100,000,000이하의 정수` 가 됩니다.
+범위가 무려 2억개의 정수를 포함합니다! 매우 넓죠. 따라서 철로를 일일히 `−100,000,000이상, 100,000,000이하의 정수` 지점에 설치하여 집-사무실이 몇개 포함되어 있는지 비교해본다면 당연히 시간조과가 날 것 이라고 생각할 수 있습니다.
+
+철로의 시작점을 어디에 설치해야 할까요? 밑의 그림을 보면 힌트를 얻을 수 있습니다.
+
+ ![철로의 시작점 위치](https://injae-kim.github.io/assets/Problem_solving/백준_13334번_철로/image1.jpg)
+
+위의 그림에서 1번 철로는 아무곳에나 철로를 설치한 경우, 2번 철로는 `집-사무실의 시작점` 에 설치한 경우 입니다.
+
+우리가 찾으려는 답은 바로 `철로 안에 집-사무실 이 포함된 경우 중 최대값` 이였으므로 철로 안에 최소한 집-사무실 이 1개는 들어있어야 겠죠! 따라서 철로를 아무대나 설치하기 보다는 `집-사무실 을 적어도 1개는 포함할 수 있는` 경우, 즉 `집-사무실 의 시작점 좌표` 들 마다 설치해 보면 됩니다.
+
+**따라서 `철로의 시작점 후보`는 문제에서 입력된 `집-사무실 들의 시작점 좌표`들 이 됩니다.**
+
+이제 `철로의 시작점`을 정했고, `철로의 길`이는 문제에서 주어지니, `철로에 몇개의 집-사무실 이 포함되는지` 만 계산하면 문제의 정답을 구할 수 있습니다! `철로에 몇개의 집-사무실 이 포함되는지` 구하는 방법도 차근차근 접근해보겠습니다.
+
+<br/>
+
+#### 철로에 몇개의 집-사무실이 포함되는지 구하기
+
+---
+
+우리에게 주어진 정보는 집-사무실의 시작점, 끝점 좌표와 철로의 시작점, 길이 입니다.
+
+가장 먼저 떠오르는 방법은 완전탐색 이죠! 철로의 시작점과 길이를 정해 놓고, 입력받은 모든 집-사무실에 대해서 `철로의 시작점 <= 집-사무실의 시작점` 이며 `집-사무실의 끝점 <= 철로의 시작점 + 길이` 을 동시에 만족하는 집-사무실 들의 갯수를 구하면 됩니다.
+
+하지만, 이러한 완전탐색 방법은 문제의 조건에서 시작점-끝점의  좌표쌍의 갯수가 100,000 개 이하로 주어졌으므로, O(N^2) 의 시간복잡도를 가지는 완전탐색이므로 시간초과가 나게 됩니다. **조금 더 빠른 방법을 찾아봅시다.**
+
+ ![](https://injae-kim.github.io/assets/Problem_solving/백준_13334번_철로/image2.jpg)
+
+철로를 첫번째 집-사무실의 시작점을 기준으로 설치를 해봤습니다. 위 그림에서는 현재 철로에 4개의 집-사무실이 포함되어 있네요.
+
+ ![](https://injae-kim.github.io/assets/Problem_solving/백준_13334번_철로/image3.jpg)
+
+철로를 두번째 집-사무실의 시작점을 기준으로 설치해봤습니다. 이렇게보니, 규칙을 찾을수 있을것 같지 않나요?
+
+철로에 포함되는 집-사무실은 `이전의 철로와 공통된 부분`, `이전의 철로에서 제외된부분`, `새로 추가된 부분` 으로 구성된것을 확인할 수 있습니다. 
+
+따라서, `철로에 포함되는 집-사무실의 개수` = `이전 철로에 포함되는 집-사무실의 개수` + `이번 철로에 새롭게 포함되는 집-사무실의 개수` - `이전 철로의 시작점에 위치한 집-사무실의 개수` 로 일반화 하여 식을 구할 수 있습니다.
+
+이때 이번 철로에 새롭게 포함되는 집-사무실의 갯수를 빠르게 구하려면, 끝점 을 기준으로 집-사무실 좌표들을 최소 우선순위 큐에 넣은 후, 현재의 철로에 포함되는지를 체크하여 우선순위 큐에서 뽑아주면 완전탐색보다 훨씬 빠르게 구할 수 있겠죠!
+
+지금까지의 과정을 정리해보면 밑과 같습니다.
+
+> 집-사무실의 좌표를 끝점을 기준으로 최소 우선순위 큐에 삽입한 후, 집-사무실의 시작점들을 오름차순으로 순회하며 이 시작점에 설치된 철로에 포함되는 집-사무실의 개수를 최소 우선순위큐에서 뽑아가며 구한다.
+>
+> 이때 현재 철로에 포함된 집-사무실의 개수는 `이전 철로에 포함된 집-사무실의 개수` + `이번 철로를 기준으로 새롭게 포함되는 집-사무실의 개수` - `이전 철로의 시작점에 위치하는 집-사무실의 개수` 가 된다.
+
+문제에서 원하는 답을 명확하게 정의하고, 여기에 필요한 조건들을 차근차근 좁혀가다 보면 이런 결론을 낼 수 있습니다.
+
+<br/>
+
+#### 소스코드
+
+---
+
+```c++
+#include<iostream>
+#include<vector>
+#include<queue>
+#include<algorithm>
+
+using namespace std;
+
+int num;
+int length;
+
+struct PAIR {
+	int start;
+	int end;
+	PAIR(int s, int e) : start(s), end(e) {}
+};
+
+struct cmpForMinHeap {
+	bool operator()(PAIR t, PAIR u) {
+		if (t.end == u.end)
+			return t.start > u.start;
+		return t.end > u.end;
+	}
+};
+
+bool cmpByAscendingOrder(const PAIR& p1, const PAIR& p2) {
+	return p1.start < p2.start;
+}
+
+priority_queue < PAIR, vector<PAIR>, cmpForMinHeap> minHeap;
+vector<PAIR> pairList;
+vector<PAIR> pairListShorterThanLimit;
+
+int max = 0;
+
+void solve()
+{
+	vector< pair<int, int> > temp;
+
+	// 집-사무실의 시작점을 기준으로 시작점마다 몇개의 집-사무실이 설치되어있는지를 temp에 저장
+	for (int i = 0; i < pairListShorterThanLimit.size(); i++)
+	{
+		if (i == 0)
+		{
+			temp.push_back({ pairListShorterThanLimit[0].start, 1 });
+			continue;
+		}
+
+		int preStart = temp.back().first;
+
+		if (preStart == pairListShorterThanLimit[i].start)
+			temp.back().second++;
+		else
+			temp.push_back({ pairListShorterThanLimit[i].start, 1 });
+	}
+
+	int count = 0;
+
+	for (int i = 0; i < temp.size(); i++)
+	{
+		int _count = 0;
+
+		while (minHeap.empty() == false)
+		{
+			// 최소 우선순위 큐 에서 현재 철로에 집-사무실의 끝접이 포함되면 카운트 증가, pop
+			if (temp[i].first + length >= minHeap.top().end)
+			{
+				minHeap.pop();
+				_count++;
+			}
+			else
+				break;
+		}
+
+        /*
+		현재 철로에 포함되는 집-사무실의 개수 = 
+		이전 철로에 포함되는 집-사무실의 개수
+		+ 이번 철로에 새롭게 포함되는 집-사무실의 개수
+		- 이전 철로의 시작점에 위치한 집-사무실의 개수
+		*/
+		if (i == 0)
+		{
+			count = _count;
+		}
+		else
+		{
+			count = count - temp[i - 1].second + _count;
+		}
+
+		if (::max < count)
+			::max = count;
+	}
+
+	cout << ::max << endl;
+}
+
+int main() {
+	cin >> num;
+
+	// 집-사무실 좌표 입력
+	for (int i = 0; i < num; i++)
+	{
+		int start, end;
+		cin >> start >> end;
+
+		if (start > end)
+		{
+			int temp = start;
+			start = end;
+			end = temp;
+		}
+
+		pairList.push_back({ PAIR(start, end) });
+	}
+
+	cin >> length;
+
+	// 추후 계산의 편의를 위해, 주어진 철로보다 긴 집-사무실 좌표쌍 들은 제거
+	for (int i = 0; i < pairList.size(); i++)
+	{
+		if (pairList[i].end - pairList[i].start <= length)
+		{
+			minHeap.push(pairList[i]);
+			pairListShorterThanLimit.push_back(pairList[i]);
+		}
+	}
+
+	// 집-사무실의 시작점을 기준으로 철로를 설치하기위해 시작점기준 오름차순으로 정렬
+	sort(pairListShorterThanLimit.begin(), pairListShorterThanLimit.end(), cmpByAscendingOrder);
+
+	solve();
+
+	return 0;
+}
+```
+
+ ![](https://injae-kim.github.io/assets/Problem_solving/백준_13334번_철로/result.jpg)
+
+<br/>
+
+#### 문제풀이 후기
+
+---
+
+문제에 대한 접근방식을 차근차근 풀어가는 과정이 어려웠습니다. 다른 분의 풀이를 보지않고 저만의 아이디어로 풀고자 했더니 푸는데 5시간 넘게 걸린거같네요..ㅠ
+
+`정렬`과 `우선순위 큐` 에 대한 이해와 구현을 할 수 있어야 접근할 수 있었던 문제였습니다.
+
+문제에서 요구하는 정답을 명확하게 정의하고 하나하나 조건을 따져가며 차근차근 접근하여 힌트를 얻고, 이를 이용하여 문제를 풀 수 있었습니다.
+
+개인적으로 문제 접근 방식을 설계하고 하나하나 풀어가는 과정이 재밌었던 문제였습니다!
