@@ -94,3 +94,11 @@ cover:  "https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.
   - 집에 있으니 아무것도 안할것 같아서 카페로 나와서 알고리즘 공부했다
 - codeforce div.2 참석, 올해 하반기 전에 codeforce 퍼플 달성을 목표로 공부!
 
+<br/>
+
+#### 2월 10일 (월)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - particle filters
+- 노션으로 본격적인 프로젝트 관리 시작
+- 칼만필터 증명에 대한 공부
