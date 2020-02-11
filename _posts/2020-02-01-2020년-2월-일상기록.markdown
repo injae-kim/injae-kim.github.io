@@ -101,4 +101,17 @@ cover:  "https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.
 - [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
   - particle filters
 - 노션으로 본격적인 프로젝트 관리 시작
-- 칼만필터 증명에 대한 공부
+- 칼만필터 증명, 수식 유도 과정 공부
+
+<br/>
+
+#### 2월 11일 (화)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - Introduction to Classification
+- 노션 사용법 학습, 개인 위키 페이지 제작, 팀 칸반보드와 로드맵 제작 후 제목, 내용 작성 방법 등을 팀 회의 후 합의
+- 확률과통계 다시 복습, [프로그래머를 위한 확률과 통계 책](http://www.yes24.com/Product/Goods/72336483) 
+  - 칼만필터 증명 과정에서 오차 공분산에서 막혔다..
+  - 조건부 기댓값, 조건부 분산 같은 개념을 다시 확실히 가져가야 증명이 매끄럽게 이해 될 듯
+
+<br/>
