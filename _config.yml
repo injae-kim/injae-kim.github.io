@@ -54,7 +54,7 @@ jekyll-archives:
 # Category descriptions (for archive pages)
 descriptions:
   - cat: Problem_solving
-    desc: "누구나 이해 할 수 있도록 정말 쉽게 설명한 알고리즘 문제 풀이"
+    desc: "아이디어로 접근하는 알고리즘 문제 풀이 방법"
 
   - cat: Robot_operating_system
     desc: "ROS, OpenCV, Jetson tx2 for Robotics project"
