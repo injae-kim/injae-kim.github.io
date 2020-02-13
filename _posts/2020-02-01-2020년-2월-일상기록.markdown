@@ -115,3 +115,33 @@ cover:  "https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.
   - 조건부 기댓값, 조건부 분산 같은 개념을 다시 확실히 가져가야 증명이 매끄럽게 이해 될 듯
 
 <br/>
+
+#### 2월 12일 (수)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - Classification: Generative models
+  - Principle Component Analysis (PCA) in image
+- 확률과통계 다시 복습, [프로그래머를 위한 확률과 통계 책](http://www.yes24.com/Product/Goods/72336483) 1 ~ 4장 공부
+  - 칼만필터 증명 과정에서 오차 공분산에서 막혀서 다시공부 시작!
+  - 조건부 기댓값, 조건부 분산 같은 개념을 다시 확실히 가져가야 증명이 매끄럽게 이해 될 듯
+  - 조건부확률과 베이즈공식
+  - 독립성
+  - 이산값의 확률분포
+    - 큰수의법칙
+    - 조건부 기댓값과 최소제곱예측
+  - 연속값의 확률분포
+    - 확률밀도함수
+- 23:35 에 Codeforce div.2 콘테스트 열려서 알고리즘 연습 겸 참석
+
+<br/>
+
+#### 2월 13일 (목)
+
+- 녹조탐지, 해상 유출 기름 인식 관련 논문 리스트업 완료, 팀 노션에 공유 (이번주동안 30개+ 읽음)
+  - ![](https://injae-kim.github.io/assets/Life/paper_review.JPG)
+- 확률과통계 다시 복습, [프로그래머를 위한 확률과 통계 책](http://www.yes24.com/Product/Goods/72336483) 5장
+  - 공분산행렬과 다변량 정규분포와 타원
+  - PCA 의 원리와 이해
+- [Evaluation of the Ability of Spectral Indices of Hydrocarbons and Seawater for Identifying Oil Slicks Utilizing Hyperspectral Images](https://www.mdpi.com/2072-4292/10/3/421) 논문 리뷰 및 발표 자료 준비
+
+<br/>
