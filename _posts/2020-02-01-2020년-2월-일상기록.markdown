@@ -145,3 +145,15 @@ cover:  "https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.
 - [Evaluation of the Ability of Spectral Indices of Hydrocarbons and Seawater for Identifying Oil Slicks Utilizing Hyperspectral Images](https://www.mdpi.com/2072-4292/10/3/421) 논문 리뷰 및 발표 자료 준비
 
 <br/>
+
+#### 2월 14일 (금)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - Appearance-based tracking
+- 확률과통계 다시 복습, [프로그래머를 위한 확률과 통계 책](http://www.yes24.com/Product/Goods/72336483) 6장
+  - 최소분산불편추정
+  - 최대우도추정
+  - 베이즈추정
+- [Evaluation of the Ability of Spectral Indices of Hydrocarbons and Seawater for Identifying Oil Slicks Utilizing Hyperspectral Images](https://www.mdpi.com/2072-4292/10/3/421) 논문 발표
+
+<br/>
