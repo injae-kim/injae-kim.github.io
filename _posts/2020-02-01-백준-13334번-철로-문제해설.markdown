@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "백준 13334번 철로 문제 해설"
-date:   2019-02-05 10:00:00
+date:   2020-02-05 10:00:00
 author: injae Kim
 categories: Problem_solving
 # tags:	PS Algorithm

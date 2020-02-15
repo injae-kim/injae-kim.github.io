@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "2020년 2월 일상 기록"
-date:   2019-02-01 10:00:00
+date:   2020-02-01 10:00:00
 author: injae Kim
 categories: Life
 # tags:	Life 프로그래머 일상
