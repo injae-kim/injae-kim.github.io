@@ -41,7 +41,6 @@ permalink: /about/
 <br/>
 
 ## Experience
----
 - 청각장애인이 운행하는 [고요한택시](http://www.goyohantaxi.com/) 안드로이드 개발자 (2018 ~ 2019)
     - 고요한택시 서비스 애플리케이션 개발, web fullstack 개발
     - [고요한택시 관련 기사](http://news1.kr/articles/?3786791), [고요한택시 관련 포스트](https://blog.naver.com/kead1/221677118935)
@@ -49,19 +48,15 @@ permalink: /about/
     - 해양 유출 기름 회수 로봇, 유출유 인식 SW 개발
     - [쉐코 관련 기사](https://www.yna.co.kr/view/AKR20190628149500065?input=1195m), [쉐코 소개 영상](https://www.youtube.com/watch?v=zOSeQCItZeU)
 
-
+---
 
 ## Education
 
----
-
 - 동국대학교 컴퓨터공학 전공 (2021. 02 졸업 예정)
 
-
+---
 
 ## Awards
-
----
 
 - [2018 동국대학교 프로그래밍 경진대회 장려상](https://injae-kim.github.io/assets/about_me/프로그래밍경진대회.jpg)
 - [2018 군위군 문화관광 활성화을 위한 관학협력사업 과제 최우수상](https://injae-kim.github.io/assets/about_me/군위군_산학협력.jpg)
@@ -78,31 +73,25 @@ permalink: /about/
   - [4개 항만공사 공동주최 창업 아이디어 해커톤 SPLASH 대상](http://ilyo.co.kr/?ac=article_view&entry_id=348400)
   - 사회적 기업 육성사업 선정, [청년 창업 사관학교](https://www.venturesquare.net/794557) 지원사업 선정
 
-
+---
 
 ## Activity
-
----
 
 - [[출원번호: 10-2019-0063063호] 해양방제장치 특허 발명](https://doi.org/10.8080/1020190063063)
 - [출원번호: 10-2019-0063075호] 해양방제장치 특허 발명
 - 2018년 동국대학교 심화프로그래밍 강의 담당 조교
 
-
+---
 
 ## Project
-
----
 
 - 오픈소스 Phaser.js 를 이용한 멀티 플레이 웹 게임 개발 (2018)
 - 스캔본 상하 반전 여부 탐지 알고리즘 개발 (2019)
 - 해상 유출 기름 탐지 알고리즘 개발 (2019 ~)
 
-
+---
 
 ## Contact
-
----
 
 - injae.kim.dev@gmail.com
 
