@@ -157,3 +157,32 @@ cover:  "https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.
 - [Evaluation of the Ability of Spectral Indices of Hydrocarbons and Seawater for Identifying Oil Slicks Utilizing Hyperspectral Images](https://www.mdpi.com/2072-4292/10/3/421) 논문 발표
 
 <br/>
+
+#### 2월 15일 (토)
+
+- 백준 알고리즘 스터디 (오전 11시 ~ 오후 1시 30분)
+  - [2151번 거울설치](https://www.acmicpc.net/problem/2151) 성공
+  - [10800번 컬러볼](https://www.acmicpc.net/problem/10800) 실패, 간단한 dp 문제인데 시간초과남.. 스터디끝나고 다시푸니까 성공
+  - [2636번 치즈](https://www.acmicpc.net/problem/2636) 성공
+
+<br/>
+
+#### 2월 17일 (월)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - Discriminative classifiers
+  - Boosting and face detection
+- 백준 알고리즘 스터디 과제
+  - [1091번 카드섞기](https://www.acmicpc.net/problem/1091), 풀이 방법 포스팅 예정
+
+<br/>
+
+#### 2월 18일 (화)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - Support Vector Machines, 추후에 수식 증명 및 유도, 장단점에 대하여 포스팅 예정
+  - Bag of visual words
+- 백준 알고리즘 스터디 과제
+  - [1029번 그림교환](https://www.acmicpc.net/problem/1029), 풀이 방법 포스팅 예정
+
+<br/>
