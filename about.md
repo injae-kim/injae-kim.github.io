@@ -45,8 +45,8 @@ permalink: /about/
     - 고요한택시 서비스 애플리케이션 개발, web fullstack 개발
     - [고요한택시 관련 기사](http://news1.kr/articles/?3786791), [고요한택시 관련 포스트](https://blog.naver.com/kead1/221677118935)
 - 청청바다를 공유하는 팀 [쉐코](http://sheco.co) SW 엔지니어 (2019 ~)
-    - 해양 유출 기름 회수 로봇, 유출유 인식 SW 개발
-    - [쉐코 관련 기사](https://www.yna.co.kr/view/AKR20190628149500065?input=1195m), [쉐코 소개 영상](https://www.youtube.com/watch?v=zOSeQCItZeU)
+    - 해상 유출 기름 회수 로봇, 해상 유출유 인식 SW 개발
+    - [쉐코 관련 기사](https://www.yna.co.kr/view/AKR20190628149500065?input=1195m), [쉐코 소개 영상](https://www.youtube.com/watch?v=V6j5l5dnHDc)
 
 ---
 
@@ -64,14 +64,16 @@ permalink: /about/
   - [ICIP & 캡스톤 디자인 결과발표 최우수상](https://injae-kim.github.io/assets/about_me/캡스톤디자인.jpg)
   - [관련 기사](https://www.kyongbuk.co.kr/news/articleView.html?idxno=1049167)
 - [2018 동국대학교 창업장학생 선정](https://injae-kim.github.io/assets/about_me/장학증서.jpg)
-- 고요한택시
+- 고요한택시: 청각장애인이 운행하는 고요한 택시 애플리케이션
   - [2019 Enactus 국내대회 우승](https://www.venturesquare.net/786727)
   - [2019 Enactus WorldCup Semi-Final Round 3위](https://enactus.org/worldcup/results-2014/)
-- 쉐코
+- 쉐코: 컴퓨터비전 기반 해양 방제 로봇
   - [2019 삼성 투마로우 솔루션 Final Round 출전](https://www.tomorrowsolutions.org/notice/view/194)
   - [현대 제로원데이 스타트업 전시참여](http://zer01neday.com/929/)
-  - [4개 항만공사 공동주최 창업 아이디어 해커톤 SPLASH 대상](http://ilyo.co.kr/?ac=article_view&entry_id=348400)
+  - [4개 항만공사 공동주최 창업 아이디어 해커톤 SPLASH 대상](https://injae-kim.github.io/assets/about_me/항만공사해커톤.jpg), [관련기사](http://ilyo.co.kr/?ac=article_view&entry_id=348400)
+  - [한국중부발전 주최 청년 에너지드림 리그 최우수](https://injae-kim.github.io/assets/about_me/중부발전에너지드림리그.jpg)
   - 사회적 기업 육성사업 선정, [청년 창업 사관학교](https://www.venturesquare.net/794557) 지원사업 선정
+  - [2019 충북창조경제혁신센터 하드웨어 상품화 엔지니어링 지원사업 선정](https://www.youtube.com/watch?v=V6j5l5dnHDc)
 
 ---
 
@@ -86,7 +88,7 @@ permalink: /about/
 ## Project
 
 - 오픈소스 Phaser.js 를 이용한 멀티 플레이 웹 게임 개발 (2018)
-- 스캔본 상하 반전 여부 탐지 알고리즘 개발 (2019)
+- [문서 스캔본 상하 반전 여부 탐지 알고리즘 개발 (2019)](https://injae-kim.github.io/assets/about_me/2019-2학기_개별연구_최종보고서.pdf)
 - 해상 유출 기름 탐지 알고리즘 개발 (2019 ~)
 
 ---
