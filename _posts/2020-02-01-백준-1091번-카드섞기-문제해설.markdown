@@ -229,7 +229,7 @@ N 번째 카드가 다시 N 번째 위치로 돌아오기까지 소요되는 카
 
 <br/>
 
-![그림11](https://injae-kim.github.io/assets/Problem_solving/백준_1091_카드섞기/슬라이드11.JPG)
+![그림11](https://injae-kim.github.io/assets/Problem_solving/백준_1091_카드섞기/슬라이드11.jpg)
 마지막으로 싸이클의 길이가 싸이클이 아닌 부분의 길이보다 길때 입니다. 이 때도 싸이클의 시작이 맨 처음 상태인 A 임을 확인할 수 있습니다.
 
 <br/>
