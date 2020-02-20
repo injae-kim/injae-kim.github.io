@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "백준 1029번 그림교환 문제 해설, 메모이제이션 변형문제 해법!"
+title:  "백준 1029번 그림교환 문제 해설, 동적계획법 변형문제 해법!"
 date:   2020-02-21 21:00:00
 author: injae Kim
 categories: Problem_solving
