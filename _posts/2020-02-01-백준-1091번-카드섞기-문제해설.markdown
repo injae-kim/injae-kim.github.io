@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "백준 1091번 카드섞기 문제 해설, 증명으로 확실하게 이해하자!"
-date:   2020-02-15 21:00:00
+date:   2020-02-20 21:00:00
 author: injae Kim
 categories: Problem_solving
 # tags:	PS Algorithm
-cover:  "https://images.unsplash.com/photo-1519315901367-f34ff9154487?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+cover:  "https://images.unsplash.com/photo-1529480780361-c8cb81eb5735?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
 ---
 
 ##  백준 1091번 카드섞기 문제 해설
