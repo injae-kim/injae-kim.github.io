@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "백준 1091번 카드섞기 문제 해설, 증명으로 확실하게 이해하자!"
+title:  "백준 1029번 그림교환 문제 해설, 메모이제이션 변형문제 해법!"
 date:   2020-02-21 21:00:00
 author: injae Kim
 categories: Problem_solving
@@ -8,7 +8,7 @@ categories: Problem_solving
 cover:  "https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
 ---
 
-##  백준 1091번 카드섞기 문제 해설
+##  백준 1029번 그림교환 문제 해설
 ---
 
 [문제 링크](https://www.acmicpc.net/problem/1091)
