@@ -186,3 +186,35 @@ cover:  "https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.
   - [1029번 그림교환](https://www.acmicpc.net/problem/1029), 풀이 방법 포스팅 예정
 
 <br/>
+
+#### 2월 19일 (수)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - Activity recognition
+  - Hidden Markov Moodels
+- 블로그 글 작성
+  - 1091번 카드섞기 문제 해설
+
+<br/>
+
+#### 2월 20일 (목)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - Color space
+  - Segmentation
+- 블로그 글 작성
+  - 1029번 그림교환 문제 해설
+
+<br/>
+
+#### 2월 21일 (금)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - Mean Shift segmentation
+  - Segmentation by graph partitioning
+  - Segmentation as Clustering
+- 논문 스터디 발표
+  - UAVs in Support of Algal Bloom Research: A Review of Current Applications and Future Opportunities
+  - A Survey on Unmanned Surface Vehicles for Disaster Robotics: Main Challenges and Directions
+
+<br/>
