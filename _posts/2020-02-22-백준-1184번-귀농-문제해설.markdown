@@ -5,7 +5,7 @@ date:   2020-02-22 21:10:00
 author: injae Kim
 categories: Problem_solving
 # tags:	PS Algorithm
-cover:  "https://images.unsplash.com/photo-1511213966740-24d719a0a814?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+cover:  "https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80"
 ---
 
 ##  백준 1184번 귀농 문제 해설
@@ -317,7 +317,7 @@ int main() {
 
 문제의 접근방식과 아이디어를 그대로 소스코드로 구현하였습니다.
 
-![채점결과](https://injae-kim.github.io/assets/Problem_solving/백준_1248번_맞춰봐/result.JPG)
+![채점결과](https://injae-kim.github.io/assets/Problem_solving/백준_1184번_귀농/result.JPG)
 
 <br/>
 
