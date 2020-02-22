@@ -1,0 +1,335 @@
+---
+layout: post
+title:  "백준 1184번 귀농 문제 해설, 구현 문제 해결능력 기르기"
+date:   2020-02-22 21:10:00
+author: injae Kim
+categories: Problem_solving
+# tags:	PS Algorithm
+cover:  "https://images.unsplash.com/photo-1511213966740-24d719a0a814?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+---
+
+##  백준 1184번 귀농 문제 해설
+---
+
+[문제 링크](https://www.acmicpc.net/problem/1184)
+
+solved.ac 기준 `골드 1 난이도`의 문제입니다. 별다른 알고리즘이 들어가지 않지만, 오직 아이디어 접근과 전처리, 구현 만으로 높은 난이도를 달성한 문제였습니다.
+
+구현이 부족하다면, 이 문제로 연습하면 도움이 될 것 같습니다.
+
+<br>
+
+#### 문제
+---
+
+```
+상근이와 선영이는 도심 속의 삶에 싫증을 느꼈고, 친구 현수가 있는 시골로 농사를 지으려 내려왔다. 
+현수의 땅은 크기가 N×N 인 정사각형이고, 땅은 단위 정사각형 1×1로 나누어져 있다. 
+각 단위 정사각형 (i,j)의 수익은 Aij이다. Aij는 음수가 될 수도 있다. 
+(땅을 경작하지 않아 관리가 필요한 경우)
+
+현수는 자신의 땅의 일부를 상근이와 선영이에게 빌려주려고 한다. 
+두 사람이 받게되는 땅은 항상 직사각형 모양이고, 변은 축에 평행하다.
+
+현수는 두 사람이 농사지을 땅의 수익의 합이 같게 되도록 땅을 빌려주려고 한다. 
+또, 경쟁심을 유도하기위해 두 땅은 꼭짓점 하나에서만 만나게 하려고 한다. (변을 공유할 수는 없다)
+
+현수 땅의 정보가 주어졌을 때, 땅을 나누어주는 방법의 수를 구하는 프로그램을 작성하시오. 
+```
+
+#### 입력
+```
+첫째 줄에 땅의 크기 N (1 ≤ N ≤ 50)이 주어진다.
+다음 N개의 줄의 N번째 숫자 Aij는 부분 정사각형 (i,j)의 수익이다. (-1000 < Aij < 1000)
+```
+
+#### 출력
+```
+현수의 조건을 만족시키면서 땅을 빌려주는 방법의 수를 출력한다.
+```
+#### 예제입력
+
+```
+3
+1 2 3
+2 3 4
+3 4 8
+```
+#### 예제출력
+```
+7
+```
+
+<br>
+
+## 문제 풀이
+
+----
+
+우선 문제에서 두 사람에게 땅을 나누는 기준인, **나눠주는 땅은 꼭짓점 하나에서만 만나게 하려고 한다.** 가 무슨 의미인지 살펴보겠습니다.
+
+<br/>
+
+![그림1](https://injae-kim.github.io/assets/Problem_solving/백준_1184번_귀농/슬라이드1.JPG)
+![그림2](https://injae-kim.github.io/assets/Problem_solving/백준_1184번_귀농/슬라이드2.JPG)
+
+주어진 조건 그대로, 두 땅이 한 꼭짓점 에서만 만나게 땅을 나누어 보았습니다.
+
+<br/>
+
+![그림3](https://injae-kim.github.io/assets/Problem_solving/백준_1184번_귀농/슬라이드3.JPG)
+
+위의 그림에서 알 수 있듯이, 두 땅이 한 꼭지점에서만 만난다는 뜻은, 꼭지점이 전체 땅의 가장자리를 제외한 부분에 위치할 수 있다는 의미입니다.
+
+이제 꼭지점을 어디에 찍어서 땅을 나눠야 할지를 우선적으로 알아냈으니, 다음 조건인 **현수는 두 사람이 농사지을 땅의 수익의 합이 같게 되도록 땅을 빌려주려고 한다.** 로 넘어가 봅시다.
+
+<br/>
+
+### 문제 접근 방법
+
+---
+
+**현수는 두 사람이 농사지을 땅의 수익의 합이 같게 되도록 땅을 빌려주려고 하고있습니다.**  그렇다면 한 꼭짓점 에서 땅을 두 사람에게 나눌 수 있는 방법은 몇 가지나 될까요?
+
+<br/>
+
+![그림4](https://injae-kim.github.io/assets/Problem_solving/백준_1184번_귀농/슬라이드4.JPG)
+
+위의 그림처럼, 한 꼭지점만 두  땅이 맞닿으면 되므로, 경우의 수가 많습니다! 따라서, 이때 땅을 나눌수 있는 방법을 얼마나 효율적으로 계산할 수 있는가 가 이 문제의 핵심 구현 부분이 되겠습니다.
+
+**우선, 임의의 한 꼭지점 에서 왼쪽 위 부분의 땅 부터 나누는 방법을 살펴보겠습니다.**
+
+<br/>
+
+![그림5](https://injae-kim.github.io/assets/Problem_solving/백준_1184번_귀농/슬라이드5.JPG)
+
+왼쪽 위의 땅에서, 꼭지점가 가장 가까운 행 부터 차근차근 생각해보죠. 첫 행 에는 위처럼 3개의 땅을 나눌 수 있네요.
+
+<br/>
+
+![그림6](https://injae-kim.github.io/assets/Problem_solving/백준_1184번_귀농/슬라이드6.JPG)
+
+그 위의 행 의 경우 입니다. 전의 행에서 나눈 땅 에서 한 칸씩을 더한 부분으로 땅을 나눌수 있네요.
+
+<br/>
+
+![그림7](https://injae-kim.github.io/assets/Problem_solving/백준_1184번_귀농/슬라이드7.JPG)
+
+맨 위의 행의 경우 입니다. 마찬가지로 전의 행에서 나눈 땅 에서 한 칸씩을 더한 부분으로 나눌 수 있네요.
+
+<br/>
+
+이제 규칙을 알것 같지 않나요? 한 꼭지점을 기준으로 왼 쪽 위의 모든 땅들을 구하는 방법은, 맨 밑의 행부터 위로 올라가면서, 각 열들을 더해주면 전의 행에서 계산한 정보를 이용할 수 있으므로 빠르게 땅들의 합을 구할 수 있겠네요.
+
+따라서, 모든 꼭지점들에 대해서 **왼쪽 위 땅들과 오른쪽 아래 땅**으로 나눈 후, 각 부분에서 땅의 합이 같은 경우가 있으면 카운트를 1 증가시켜 주면 됩니다.
+
+마찬가지로, 한 꼭지점에 대해서 **오른쪽 위 땅과 왼쪽 아래** 땅으로도 나눌 수 있으므로, 각 부분에서 땅의 합이 같은 경우도 카운트를 1 증가시켜 주면 되구요!
+
+정리하면 다음과 같습니다.
+
+> 땅을 한 부분만 맞닿게 나누는 꼭지점은, 가장자리를 제외한 꼭지점이다.
+>
+> 한 꼭지점에서 땅을 나누는 방법은 (왼쪽 위, 오른쪽 아래) 와 (오른쪽 위, 왼쪽 아래) 로 나눌 수 있다.
+>
+> 땅을 두 부분으로 나눈 후에는, 각 부분에 대해서 행별로 땅의 합을 차례로 계산해 가면 전의 행 에서 계산한 땅의 합 정보를 사용할 수 있으므로 시간 제한 안에 계산이 가능하다.
+
+아이디어를 소스코드로 바로 옮겨보겠습니다.
+
+<br/>
+
+### 소스코드
+
+---
+
+```c++
+#include<iostream>
+#include<vector>
+#include<queue>
+#include<algorithm>
+#include<map>
+#include <set>
+using namespace std;
+
+int row;
+int col;
+
+int arr[51][51];
+int cache[51][51];
+
+// 땅을 두 부분으로 나눌때, 각 부분의 합 들이 저장될 벡터
+vector<int> sum1;
+vector<int> sum2;
+
+// 한 꼭지점을 기준으로 왼쪽 위 땅의 부분 합 들을 계산
+void calLeftUp(int x, int y)
+{
+	for (int i = x; i >= 0; i--)
+	{
+		int rowSum = 0;
+		for (int j = y; j >= 0; j--)
+		{
+			rowSum += arr[i][j];
+
+			if (i != x)
+				cache[i][j] = cache[i + 1][j] + rowSum;
+			else
+				cache[i][j] = rowSum;
+
+			sum1.push_back(cache[i][j]);
+		}
+	}
+}
+
+// 한 꼭지점을 기준으로 오른쪽 아래 땅의 부분 합 들을 계산
+void calRightDown(int x, int y)
+{
+
+	for (int i = x; i < row; i++)
+	{
+		int rowSum = 0;
+		for (int j = y; j < col; j++)
+		{
+			rowSum += arr[i][j];
+
+			if (i != x)
+				cache[i][j] = cache[i - 1][j] + rowSum;
+			else
+				cache[i][j] = rowSum;
+
+			sum2.push_back(cache[i][j]);
+		}
+	}
+
+}
+
+// 한 꼭지점을 기준으로 오른쪽 위 땅의 부분 합 들을 계산
+void calRightUp(int x, int y)
+{
+
+	for (int i = x; i >= 0; i--)
+	{
+		int rowSum = 0;
+		for (int j = y; j < col; j++)
+		{
+			rowSum += arr[i][j];
+
+			if (i != x)
+				cache[i][j] = cache[i + 1][j] + rowSum;
+			else
+				cache[i][j] = rowSum;
+
+			sum1.push_back(cache[i][j]);
+		}
+	}
+
+}
+
+// 한 꼭지점을 기준으로 왼쪽 아래의 땅의 부분 합 들을 계산
+void calLeftDown(int x, int y)
+{
+
+	for (int i = x; i < row; i++)
+	{
+		int rowSum = 0;
+		for (int j = y; j >= 0; j--)
+		{
+			rowSum += arr[i][j];
+
+			if (i != x)
+				cache[i][j] = cache[i - 1][j] + rowSum;
+			else
+				cache[i][j] = rowSum;
+
+			sum2.push_back(cache[i][j]);
+		}
+	}
+
+}
+
+void solve()
+{
+	int sum = 0;
+
+    // N x N 땅 에서 땅을 나눌 수 있는 꼭지점은 (N-1) x (N-1) 개 이다
+	for (int i = 0; i < row - 1; i++)
+	{
+		for (int j = 0; j < row - 1; j++)
+		{
+            // 한 꼭지점을 기준으로 왼쪽 위, 오른쪽 아래 땅으로 나눈 후 부분 합 계산
+			calLeftUp(i, j);
+			calRightDown(i + 1, j + 1);
+
+			vector<int>::iterator iter1;
+			vector<int>::iterator iter2;
+
+            // 땅의 부분 합 들중에 같은 땅이 있다면, 카운트 1 증가
+			for (iter1 = sum1.begin(); iter1 != sum1.end(); ++iter1)
+			{
+				for (iter2 = sum2.begin(); iter2 != sum2.end(); ++iter2)
+				{
+					if (*iter1 == *iter2)
+						sum++;
+				}
+			}
+
+			sum1.clear();
+			sum2.clear();
+
+            // 한 꼭지점을 기준으로 오른쪽 위, 왼쪽 아래의 땅으로 나눈 후 부분 합 계산
+			calRightUp(i, j + 1);
+			calLeftDown(i + 1, j);
+
+            // 땅의 부분 합 들중에 같은 땅이 있다면, 카운트 1 증가
+			for (iter1 = sum1.begin(); iter1 != sum1.end(); ++iter1)
+			{
+				for (iter2 = sum2.begin(); iter2 != sum2.end(); ++iter2)
+				{
+					if (*iter1 == *iter2)
+						sum++;
+				}
+			}
+			sum1.clear();
+			sum2.clear();
+		}
+	}
+
+	cout << sum << endl;
+}
+
+
+
+int main() {
+	cin >> row;
+	col = row;
+	for (int i = 0; i < row; i++)
+	{
+		for (int j = 0; j < row; j++)
+		{
+			cin >> arr[i][j];
+		}
+	}
+
+	solve();
+
+	return 0;
+}
+```
+
+문제의 접근방식과 아이디어를 그대로 소스코드로 구현하였습니다.
+
+![채점결과](https://injae-kim.github.io/assets/Problem_solving/백준_1248번_맞춰봐/result.JPG)
+
+<br/>
+
+
+#### 문제풀이 후기
+
+---
+
+다른 알고리즘이 들어가 있지 않은, 오직 구현 만을 위한 문제 였습니다.
+
+땅의 부분 합을 전 행에서 계산한 결과를 이용하여 빠르게 계산하는 방법을 찾아내는 게 핵심 이였습니다.
+
+항상 느끼는 것 이지만, 어떤 문제던지 접근하는 아이디어가 가장 중요한 것 같습니다.
+
+많은 도움이 되었길 바랍니다!
