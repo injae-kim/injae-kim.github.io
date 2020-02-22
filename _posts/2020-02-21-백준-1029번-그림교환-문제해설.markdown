@@ -219,7 +219,7 @@ int main()
 }
 ```
 
-문제의 접근방식과 아이디어, 물을 제거하는 조건을 그대로 소스코드로 구현하였습니다.
+문제의 접근방식과 아이디어를 그대로 소스코드로 구현하였습니다.
 
 ![채점결과](https://injae-kim.github.io/assets/Problem_solving/백준_1029_그림교환/result.JPG)
 
