@@ -236,3 +236,11 @@ cover:  "https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.
 - [Video Processing from Electro-optical Sensors for Object Detection and Tracking in Maritime Environment: A Survey](https://arxiv.org/pdf/1611.05842.pdf) 논문 리딩
 
 <br/>
+
+#### 2월 25일 (화)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 공부
+  - The retina
+- [Video Processing from Electro-optical Sensors for Object Detection and Tracking in Maritime Environment: A Survey](https://arxiv.org/pdf/1611.05842.pdf) 논문 리딩 완료
+
+<br/>
