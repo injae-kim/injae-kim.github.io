@@ -244,3 +244,13 @@ cover:  "https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.
 - [Video Processing from Electro-optical Sensors for Object Detection and Tracking in Maritime Environment: A Survey](https://arxiv.org/pdf/1611.05842.pdf) 논문 리딩 완료
 
 <br/>
+
+#### 2월 26일 (수)
+
+- [Introduction to Computer Vision, Udacity](https://classroom.udacity.com/courses/ud810) 강의 완강!
+
+  ![완강기념](https://injae-kim.github.io/assets/about_me/udacity_introduction_to_computer_vision.JPG)
+
+- 알고리즘 문제해결전략 책 (종만북) 9장, 동적계획법 테크닉 완강
+
+<br/>
