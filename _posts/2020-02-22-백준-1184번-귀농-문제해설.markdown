@@ -71,6 +71,7 @@ solved.ac 기준 `골드 1 난이도`의 문제입니다. 별다른 알고리즘
 <br/>
 
 ![그림1](https://injae-kim.github.io/assets/Problem_solving/백준_1184번_귀농/슬라이드1.JPG)
+<br/>
 ![그림2](https://injae-kim.github.io/assets/Problem_solving/백준_1184번_귀농/슬라이드2.JPG)
 
 주어진 조건 그대로, 두 땅이 한 꼭짓점 에서만 만나게 땅을 나누어 보았습니다.
