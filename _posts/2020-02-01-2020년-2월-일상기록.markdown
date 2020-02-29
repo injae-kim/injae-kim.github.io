@@ -269,3 +269,12 @@ cover:  "https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.
 - 종만북 11장 조합탐색 완강
 
 <br/>
+
+#### 2월 29일 (토)
+
+- 알고리즘 스터디
+  - [저울](https://programmers.co.kr/learn/courses/30/lessons/42886)
+  - [벽부수고 이동하기 3](https://www.acmicpc.net/problem/16933)
+  - [체스판 여행 1](https://www.acmicpc.net/problem/16959)
+
+<br/>
