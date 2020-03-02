@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "2020년 3월 일상 기록"
+date:   2020-03-01 10:00:00
+author: injae Kim
+categories: Life
+# tags:	Life 프로그래머 일상
+cover:  "https://images.unsplash.com/photo-1502101872923-d48509bff386?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80"
+---
+
+##  2020년 3월 일상 기록
+---
+
+#### 3월 목표
+
+- 컴퓨터 비전 Advanced 과정 완강
+
+- 토익 공부
+
+- 헬스는 지금처럼 주 4~5회 꾸준히
+
+- 연구에 대한 성과 내기
+
+- Anomaly Detection, Texture Based Segmentation 과 같은 새로운 분야 공부, 도전!
+
+- 알고리즘 풀이 실력 한단계 높이기
+
+  - 종만북 2권 까지 완강
+
+  
+
+#### 3월 2일 (월)
+
+- 원격 근무 첫날, 집에서 일하니 편하고 좋다
+- 논문 스터디 발표
+
+<br/>
