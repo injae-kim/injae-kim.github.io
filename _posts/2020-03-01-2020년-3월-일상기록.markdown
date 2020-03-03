@@ -13,13 +13,11 @@ cover:  "https://images.unsplash.com/photo-1502101872923-d48509bff386?ixlib=rb-1
 
 #### 3월 목표
 
-- 컴퓨터 비전 Advanced 과정 완강
-
 - 토익 공부
 
 - 헬스는 지금처럼 주 4~5회 꾸준히
 
-- 연구에 대한 성과 내기
+- 일, 연구에 대한 성과 내기
 
 - Anomaly Detection, Texture Based Segmentation 과 같은 새로운 분야 공부, 도전!
 
@@ -27,11 +25,19 @@ cover:  "https://images.unsplash.com/photo-1502101872923-d48509bff386?ixlib=rb-1
 
   - 종만북 2권 까지 완강
 
-  
+<br/>
 
 #### 3월 2일 (월)
 
 - 원격 근무 첫날, 집에서 일하니 편하고 좋다
 - 논문 스터디 발표
+
+<br/>
+
+#### 3월 3일 (화)
+
+- 개발팀 주간회의, 업무 분담
+- [Texture Segmentation: Introduction to Signal and Image Processing](https://www.miac.unibas.ch/SIP/pdf/SIP-08-Texture.pdf) 자료 리딩
+- [TEXTURE IMAGE ANALYSIS AND TEXTURE CLASSIFICATION METHODS - A REVIEW](https://arxiv.org/ftp/arxiv/papers/1904/1904.06554.pdf) 논문 리딩
 
 <br/>
