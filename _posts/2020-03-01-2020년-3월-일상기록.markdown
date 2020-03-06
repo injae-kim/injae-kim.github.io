@@ -41,3 +41,32 @@ cover:  "https://images.unsplash.com/photo-1502101872923-d48509bff386?ixlib=rb-1
 - [TEXTURE IMAGE ANALYSIS AND TEXTURE CLASSIFICATION METHODS - A REVIEW](https://arxiv.org/ftp/arxiv/papers/1904/1904.06554.pdf) 논문 리딩
 
 <br/>
+
+#### 3월 4일 (수)
+
+- [GLCM TEXTURE: A TUTORIAL]([https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fbeeab0b-d397-40d7-9361-df06010bd901/texture_tutorial_v_3_0_180206.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT73L2G45JOXHYORQ%2F20200306%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200306T063345Z&X-Amz-Expires=86400&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEK%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIHaHDPiMddCgz4eszceeH7J992U4mPlbFdWXGBIjyraFAiEA2mepuRkinvN7J6i%2FsSoKuXuDOl4lcxfrepSXKijpvMwqvQMIh%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwyNzQ1NjcxNDkzNzAiDJCwx0Di9rm4BRNbTCqRA%2FTIvRhOmqRVDxIMriAkhlm6VI1%2FF%2FhXEJG74fUZ9rHI1DZAXzSpFGoiz89THWGPLLjsrcrn7PFWwSI4F9qGra3IyAWCMEhgxs1OzYf5gtYPV7oAr5%2BxEerP7ROtz2zqMaYU0vuf%2B7PxWe12AaiQ4oXYVOcwi9WABxM%2FYa3yzENqCPYhWX8rIqrJ%2BF5lsRh0m9wjPm4RcmtAgrAnz%2Fnrp8cHO7Z2eSfUN%2BHx5ls3EiRpnHpyftTLHZUagQ8A8Cj3lnwmoW3hU22iCLXVX%2F4Vw7Md1Ts9cEUKwjFVzjsajqVIr79vMZ%2BieVOLeoPgb7BaeqIVEcvhUIK03tpkRoTDU5RMaBFU7ducPaD0P3xnLhSY0798T4fW%2FjwL6DaoQ%2FIR1VAOsf1aVAq1btkdAL8d2Ysw5bBPjbURqr%2FXmbcJ3aidd24kneAyEo0mEx4%2BBY2QeQ1IprFmUGkl1%2F6ctJY%2Fb4E8uHQFNTmKINkDEgUGVN5YZRYWAFHkRw8awn5asFvP9i3pMt6NokQSAOg7%2BTdLXjnbMNfXh%2FMFOusBfj1tIUwiMsFP%2FLT%2BsBC0mHddTqE9gu8a5AO9NzxmVuMc435f%2BpSTs4K%2FxPwfkS%2B%2FDI1uqup7tspEEGiJDiswf0mylzJQVBUZalcPsara1WQO69y%2FVCWK4yMISY%2FonL5FZ7jMwoyafIuEjHFFXOYCZzNvG7Oi6VzPddNwJejGj0QxAfZQUH99aKZkxcq5%2F1LAZzWd7ecGYbxhDmHTDxtB7kR0%2FwMhr%2FtdvnY%2BVPZKrkeTTlhcqkTkiSvShLASgytKHHCn8880tvrxA8BM1lREV2oYWlXmF%2FB2dFEwZTwL2bCnINHil2M%2Beca6hw%3D%3D&X-Amz-Signature=a4265c70a58618d269623166a6834a3adab48479314f6f39548f14b95182d88c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22texture%2520tutorial%2520v%25203_0%2520180206.pdf%22](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fbeeab0b-d397-40d7-9361-df06010bd901/texture_tutorial_v_3_0_180206.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT73L2G45JOXHYORQ%2F20200306%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200306T063345Z&X-Amz-Expires=86400&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEK%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIHaHDPiMddCgz4eszceeH7J992U4mPlbFdWXGBIjyraFAiEA2mepuRkinvN7J6i%2FsSoKuXuDOl4lcxfrepSXKijpvMwqvQMIh%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwyNzQ1NjcxNDkzNzAiDJCwx0Di9rm4BRNbTCqRA%2FTIvRhOmqRVDxIMriAkhlm6VI1%2FF%2FhXEJG74fUZ9rHI1DZAXzSpFGoiz89THWGPLLjsrcrn7PFWwSI4F9qGra3IyAWCMEhgxs1OzYf5gtYPV7oAr5%2BxEerP7ROtz2zqMaYU0vuf%2B7PxWe12AaiQ4oXYVOcwi9WABxM%2FYa3yzENqCPYhWX8rIqrJ%2BF5lsRh0m9wjPm4RcmtAgrAnz%2Fnrp8cHO7Z2eSfUN%2BHx5ls3EiRpnHpyftTLHZUagQ8A8Cj3lnwmoW3hU22iCLXVX%2F4Vw7Md1Ts9cEUKwjFVzjsajqVIr79vMZ%2BieVOLeoPgb7BaeqIVEcvhUIK03tpkRoTDU5RMaBFU7ducPaD0P3xnLhSY0798T4fW%2FjwL6DaoQ%2FIR1VAOsf1aVAq1btkdAL8d2Ysw5bBPjbURqr%2FXmbcJ3aidd24kneAyEo0mEx4%2BBY2QeQ1IprFmUGkl1%2F6ctJY%2Fb4E8uHQFNTmKINkDEgUGVN5YZRYWAFHkRw8awn5asFvP9i3pMt6NokQSAOg7%2BTdLXjnbMNfXh%2FMFOusBfj1tIUwiMsFP%2FLT%2BsBC0mHddTqE9gu8a5AO9NzxmVuMc435f%2BpSTs4K%2FxPwfkS%2B%2FDI1uqup7tspEEGiJDiswf0mylzJQVBUZalcPsara1WQO69y%2FVCWK4yMISY%2FonL5FZ7jMwoyafIuEjHFFXOYCZzNvG7Oi6VzPddNwJejGj0QxAfZQUH99aKZkxcq5%2F1LAZzWd7ecGYbxhDmHTDxtB7kR0%2FwMhr%2FtdvnY%2BVPZKrkeTTlhcqkTkiSvShLASgytKHHCn8880tvrxA8BM1lREV2oYWlXmF%2FB2dFEwZTwL2bCnINHil2M%2Beca6hw%3D%3D&X-Amz-Signature=a4265c70a58618d269623166a6834a3adab48479314f6f39548f14b95182d88c&X-Amz-SignedHeaders=host&response-content-disposition=filename %3D"texture%20tutorial%20v%203_0%20180206.pdf")) 자료 리딩
+- 텍스쳐 기반 이미지 분석 방법론 에 대한 이해
+  - Co-occurrence Matrix
+  - Local Binary Pattern
+  - Wavelet Transform
+  - Gabor Filter
+
+<br/>
+
+#### 3월 5일 (목)
+
+- 텍스쳐 기반 이미지 분석 방법론 테스트 소스코드 작성
+  - Co-occurrence Matrix
+  - Local Binary Pattern
+  - Wavelet Transform
+  - Gabor Filter
+- 텍스쳐 기반 이미지 분석 결과 분석
+
+<br/>
+
+#### 3월 6일 (금)
+
+- 텍스쳐 기반 이미지 분석 결과 문서화, 팀 내 노션에 공유
+- 논문 스터디 발표자료 ppt 제작, 발표
+
+<br/>
