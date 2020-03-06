@@ -5,7 +5,7 @@ date:   2020-03-06 21:00:00
 author: injae Kim
 categories: Problem_solving
 # tags:	PS Algorithm
-cover:  "https://images.unsplash.com/photo-1563207153-f403bf289096?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80"
+cover:  "https://images.unsplash.com/photo-1546704864-07235973413d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
 ---
 
 ##  백준 16959번 체스판 여행 1 문제 해설
