@@ -70,3 +70,10 @@ cover:  "https://images.unsplash.com/photo-1502101872923-d48509bff386?ixlib=rb-1
 - 논문 스터디 발표자료 ppt 제작, 발표
 
 <br/>
+
+#### 3월 7일 (토)
+
+- 알고리즘 문제 해결 전략 11장 조합 탐색, 12장 최적화문제 결정문제로 바꿔풀기 완강
+- [백준 2618번 경찰차](https://www.acmicpc.net/problem/2618) 문제 해결 (다이나믹 프로그래밍)
+
+<br/>
