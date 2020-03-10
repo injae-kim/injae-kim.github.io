@@ -86,3 +86,10 @@ cover:  "https://images.unsplash.com/photo-1502101872923-d48509bff386?ixlib=rb-1
 - 알고리즘 문제 해결 전략 13장 수치해석, 14장 정수론 공부
 
 <br/>
+
+#### 3월 10일 (화)
+
+- 알고리즘 문제 해결 전략 16장 비트마스크, 17장 부분합 완강
+- Texture based Image Analysis 관련 논문 조사, 리딩
+
+<br/>
