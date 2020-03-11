@@ -1,0 +1,306 @@
+---
+layout: post
+title:  "백준 2618번 경찰차 문제 해설"
+date:   2020-03-11 21:00:00
+author: injae Kim
+categories: Problem_solving
+# tags:	PS Algorithm
+cover:  "https://images.unsplash.com/photo-1546704864-07235973413d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+---
+
+##  백준 2618번 경찰차 문제 해설
+---
+
+[문제 링크](https://www.acmicpc.net/problem/2618)
+
+solved.ac 기준 `골드 1 난이도`의 문제입니다. 동적 계획법 문제 중에서도 부분문제를 정의하는 방법을 떠올리기 어려웠던 문제였습니다.
+
+문제부터 살펴보겠습니다.
+
+<br>
+
+#### 문제
+---
+
+```
+어떤 도시의 중심가는 N개의 동서방향 도로와 N개의 남북방향 도로로 구성되어 있다.
+
+모든 도로에는 도로 번호가 있으며 남북방향 도로는 왼쪽부터 1에서 시작하여 N까지 번호가 할당되어 있고 
+동서방향 도로는 위부터 1에서 시작하여 N까지 번호가 할당되어 있다. 또한 동서방향 도로 사이의 거리와 
+남 북방향 도로 사이의 거리는 모두 1이다. 동서방향 도로와 남북방향 도로가 교차하는 교차로의 위치는 
+두 도로의 번호의 쌍인 (동서방향 도로 번호, 남북방향 도로 번호)로 나타낸다. 
+N이 6인 경우의 예를 들면 다음과 같다.
+```
+![문제](https://www.acmicpc.net/upload/images/BSgNJcsUQBLbK3i.jpg)
+
+```
+이 도시에는 두 대의 경찰차가 있으며 두 차를 경찰차1과 경찰차2로 부른다. 
+처음에는 항상 경찰차1은 (1, 1)의 위치에 있고 경찰차2는 (N, N)의 위치에 있다. 경찰 본부에서는 
+처리할 사건이 있으면 그 사건이 발생된 위치를 두 대의 경찰차 중 하나에 알려 주고, 연락 받은 경찰차는 
+그 위치로 가장 빠른 길을 통해 이동하여 사건을 처리한다. (하나의 사건은 한 대의 경찰차가 처리한다.) 
+그리고 사건을 처리 한 경찰차는 경찰 본부로부터 다음 연락이 올 때까지 처리한 사건이 발생한 위치에서 기다린다.
+ 경찰 본부에서는 사건이 발생한 순서대로 두 대의 경찰차에 맡기려고 한다. 처리해야 될 사건들은 항상 
+교차로에서 발생하며 경찰 본부에서는 이러한 사건들을 나누어 두 대의 경찰차에 맡기되, 
+두 대의 경찰차들이 이동하는 거리의 합을 최소화 하도록 사건을 맡기려고 한다.
+
+예를 들어 앞의 그림처럼 N=6인 경우, 처리해야 하는 사건들이 3개 있고 그 사건들이 발생된 위치 를 
+순서대로 (3, 5), (5, 5), (2, 3)이라고 하자. (3, 5)의 사건을 경찰차2에 맡기고 (5, 5)의 사건도 
+경찰차2에 맡기며, (2, 3)의 사건을 경찰차1에 맡기면 두 차가 이동한 거리의 합은 4 + 2 + 3 = 9가 되 고, 
+더 이상 줄일 수는 없다.
+
+처리해야 할 사건들이 순서대로 주어질 때, 두 대의 경찰차가 이동하는 거리의 합을 최소화 하도록 
+사건들을 맡기는 프로그램을 작성하시오.
+```
+
+#### 입력
+```
+첫째 줄에는 동서방향 도로의 개수를 나타내는 정수 N(5≤N≤1,000)이 주어진다. 
+둘째 줄에는 처리해야 하는 사건의 개수를 나타내는 정수 W(1≤W≤1,000)가 주어진다. 
+셋째 줄부터 (W+2)번째 줄까지 사건이 발생된 위치가 한 줄에 하나씩 주어진다. 
+경찰차들은 이 사건들을 주어진 순서대로 처리해야 한다. 각 위치는 동서방향 도로 번호를 나타내는 정수와 
+남북방향 도로 번호를 나타내는 정수로 주어지며 두 정수 사이에는 빈칸이 하나 있다. 
+두 사건이 발생한 위치가 같을 수 있다.
+```
+
+#### 출력
+```
+첫째 줄에 두 경찰차가 이동한 총 거리를 출력한다. 
+둘째 줄부터 시작하여 (i+1)번째 줄에 i(1≤i≤W)번째 사건이 맡겨진 경찰차 번호 1 또는 2를 출력한다.
+```
+#### 예제입력
+
+```
+6
+3
+3 5
+5 5
+2 3
+```
+#### 예제출력
+```
+9
+2
+2
+1
+```
+
+<br>
+
+## 문제 풀이
+
+----
+
+이 문제에서 어려웠던 점은, 좌표들을 입력으로 줘서 `BFS` 문제처럼 처음에 접근하기 쉽다는 점 입니다.
+
+우선 문제의 조건부터 분석해 보도록 하겠습니다!
+
+<br/>
+
+![그림1](https://injae-kim.github.io/assets/Problem_solving/백준_2618_경찰차/슬라이드1.JPG)
+문제에서 제시한 조건에 따라서, 한 사건이 발생시에 취할수 있는 모든행동을 그려보았습니다.
+
+경찰차 A 가 사건을 해결하러 움직이거나, 경찰차 B 가 사건을 해결하러 움직이거나 2가지 방법 밖에 없네요!
+
+**한 사건마다 2가지 방법이 있으므로 사건의 갯수를 N 이라고 하면 시간복잡도는 O(2^N) 가 됩니다.**
+
+사건의 최대 개수가 1000 개 이므로 당연히 지수 시간 복잡도로는 해결하지 못할 것 이라는걸 알 수 있습니다.
+
+조금 더 빠르게 풀 수 있는 방법을 찾아봅시다.
+
+<br/>
+
+![그림2](https://injae-kim.github.io/assets/Problem_solving/백준_2618_경찰차/슬라이드2.JPG)
+현재의 상태를 문제 정의해 보았습니다.
+
+현재의 상태는 경찰차 A, B 의 위치 만 으로 나타낼수 있으며 경찰차 A 가 움직이거나, B 가 움직이거나 2가지 방법 밖에 없으므로 부분문제도 (경찰차 A 가 움직인 경우, B가 움직인 경우) 2가지로 쉽게 분리가 가능하겠네요!
+
+<br/>
+
+![그림3](https://injae-kim.github.io/assets/Problem_solving/백준_2618_경찰차/슬라이드3.JPG)
+현재 상태가 부분문제로 분리가 되는것을 확인했으니, 동적 계획법을 적용할 수 있겟네요!
+
+경찰차 A, B 의 현재 위치는 문제에서 사건 발생 지점으로 움직인다고 했으니, (X, Y) 좌표가 아닌 사건의 번호로 저장할 수 있습니다. 1번 사건을 A 가 해결하고 2번 사건을 B 가 해결한 경우 이동 경로는 AB 로 표현할 수 있겠죠.
+
+계속해서 다음 사건을 B 가 해결한 경우 AB + B = ABB 가 되겠네요! ABB 는 1번째 사건을 A가, 2, 3번째 사건은 B가 해결했다는 것 을 나타냅니다.
+
+이때 메모이제이션을 어떻게 적용할 수 있을까요?
+
+경찰차 A, B 의 현재 위치는 경찰차 A, B 가 각각 가장 최근에 해결한 사건 번호 입니다.
+
+따라서 cache [A] [B]	처럼 2차원 배열을 사용하면 모든 사건들에 대해서 메모이제이션이 가능하겠네요.
+
+이때 부분문제들이 메모이제이션으로 캐싱 할 수 있는지 예를 들어서 확인해보겠습니다.
+
+경찰차 A, B 가 임의로 움직인 경로를 3가지 만들어 보겠습니다.
+
+ABBBABBBB**BA**
+
+AABABBABA**BA**
+
+BAABABAAA**BA**
+
+3가지 경로 모두 경찰차 A, B 가 가장 최근에 해결한 사건의 번호가 같은 것 을 확인할 수 있습니다.
+
+따라서, 모든 사건 경로를 시도해보면 경찰차 A, B 가 가장 최근에 해결한 사건의 번호가 같은 경로들이 발생한다는 것 을 알 수 있습니다.
+
+전체 경로의 수 2^N 개 중에서 현재 상태가 동일한 경로들이 생긴다는 뜻 입니다. 따라서 메모이제이션을 적용하면 동일한 상태들을 캐싱할 수 있겟죠!
+
+<br/>
+
+### 시간복잡도
+
+---
+
+사건의 개수를 N 개 라고 했을때 각 사건마다 2가지 선택지 (경찰차 A, B 중 하나가 이동) 가 존재하므로 모든 경로를 시도해볼 때의 시간복잡도는 O(2^N) 입니다.
+
+메모이제이션을 적용한다면 cache [A] [B] 배열을 전부 채우면 나머지 경우는 모두 바로 구할수 있겠죠!
+
+A, B 의 범위는 사건의 개수 N 과 동일하므로 cache [A] [B] 배열을 전부 채우려면 N * N 의 시간복잡도가 필요하며 이때 각 단계에서 2가지 선택지중 하나를 고르므로 부분문제를 해결하는데는 O(2) 가 필요합니다.
+
+따라서 메모이제이션 적용시의 시간 복잡도는 O(N * N * 2) = O(N * N) 이 됩니다.
+
+사건의 개수 N 의 최대 가 1000 이므로, O(N * N) 시간 복잡도도 충분히 제한시간 내에 해결할 수 있을 것 같네요.
+
+<br/>
+
+여기까지 문제의 해결 방법을 모두 생각해 보았습니다.
+
+여기까지의 아이디어를 그대로 코드로 구현해보겠습니다.
+
+<br/>
+
+#### 소스코드
+
+---
+
+```c++
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <queue>
+#include <tuple>
+#include <cstring>
+
+using namespace std;
+
+int row, col;
+vector<pair<int, int>> pathA;
+vector<pair<int, int>> pathB;
+
+int num;
+int cache[1009][1009];
+
+vector<int> v;
+
+
+int getMaxDistance(int A, int B)
+{	
+    // 모든 사건 해결
+	if (A == num || B == num)
+		return 0;
+
+	int& ret = cache[A][B];
+
+	if (ret != -1)
+		return ret;
+
+	ret = 987654321;
+	
+    // 다음 사건 번호
+	int maxLocation = max(A, B) + 1;
+
+    // 경찰차 A 가 다음 사건 해결 시 이동 거리
+	int distA = abs(pathA[maxLocation].first - pathA[A].first) +
+		abs(pathA[maxLocation].second - pathA[A].second);
+
+    // 경찰차 B 가 다음 사건 해결 시 이동 거리
+	int distB = abs(pathB[maxLocation].first - pathB[B].first) +
+		abs(pathB[maxLocation].second - pathB[B].second);
+
+    // 경찰차 A 가 다음 사건을 해결하거나, B 가 다음 사건을 해결하거나
+	int ret1 = getMaxDistance(maxLocation, B) + distA;
+	int ret2 = getMaxDistance(A, maxLocation) + distB;
+
+	return ret = min(ret1, ret2);
+}
+
+void reconstruct(int A, int B)
+{
+	if (A == num || B == num)
+		return;
+
+    // 다음 사건 번호
+	int maxLocation = max(A, B) + 1;
+
+	int distA = abs(pathA[maxLocation].first - pathA[A].first) +
+		abs(pathA[maxLocation].second - pathA[A].second);
+
+	int distB = abs(pathB[maxLocation].first - pathB[B].first) +
+		abs(pathB[maxLocation].second - pathB[B].second);
+
+	int ret1 = getMaxDistance(maxLocation, B) + distA;
+	int ret2 = getMaxDistance(A, maxLocation) + distB;
+
+    // 현재 상태에서 경찰차 A 가 다음 사건을 해결할 때의 이동 경로가 더 길다면
+	if (ret1 > ret2)
+	{
+        // 경찰차 B 가 다음 사건을 해결
+		cout << 2 << endl;
+		reconstruct(A, maxLocation);
+	}
+	else
+	{
+		cout << 1 << endl;
+		reconstruct(maxLocation, B);
+	}
+
+}
+
+void solve()
+{
+	cout << getMaxDistance(0, 0) << endl;
+	reconstruct(0, 0);
+}
+
+int main()
+{
+	cin >> row;	col = row;
+	cin >> num;
+	
+	memset(cache, -1, sizeof(cache));
+
+    // 처음 경찰차의 좌표
+	pathA.push_back({ 1, 1 });
+	pathB.push_back({ row, row });
+	
+	for (int i = 0; i < num; i++)
+	{
+		int x, y;	cin >> x >> y;
+		pathA.push_back({ x, y });
+		pathB.push_back({ x, y });
+	}
+	
+	solve();
+
+	return 0;
+}
+```
+
+문제의 접근방식과 아이디어를 그대로 소스코드로 구현하였습니다.
+
+이동한 총 거리 뿐 만 아니라 각각의 사건들을 어떤 경찰차가 해결했는지를 출력하는 reconstruct() 의 구현을 잘 살펴봐주시면 됩니다.
+
+![채점결과](https://injae-kim.github.io/assets/Problem_solving/백준_16959_체스판여행1/result.JPG)
+
+<br/>
+
+
+#### 문제풀이 후기
+
+---
+
+이 문제는 X, Y 좌표를 입력으로 주면서 오히려 동적 계획법이라고 떠올리기 힘들게 만들었던 문제였습니다.
+
+처음에 이 X, Y 좌표를 어떻게 메모이제이션 해야하나 난감하였지만 동적 계획법을 많이 연습하신 분이라면 충분히 부분문제만 잘 정의한다면 구현은 쉽게 해결하셨을 것 이라고 생각됩니다.
+
+감사합니다.
