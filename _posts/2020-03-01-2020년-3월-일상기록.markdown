@@ -93,3 +93,11 @@ cover:  "https://images.unsplash.com/photo-1502101872923-d48509bff386?ixlib=rb-1
 - Texture based Image Analysis 관련 논문 조사, 리딩
 
 <br/>
+
+#### 3월 11일 (수)
+
+- 알고리즘 문제 해결 전략 18, 19 장 자료구조 완강
+- Texture based Image Analysis 관련 논문 리딩
+- 실험 준비
+
+<br/>
