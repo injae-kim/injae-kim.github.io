@@ -101,3 +101,10 @@ cover:  "https://images.unsplash.com/photo-1502101872923-d48509bff386?ixlib=rb-1
 - 실험 준비
 
 <br/>
+
+#### 3월 12일 (목)
+
+- 야외 수조 실험 진행, 결과 분석
+- Gray Level Co-occurrence Matrix 관련 논문 리딩, 정리
+
+<br/>
