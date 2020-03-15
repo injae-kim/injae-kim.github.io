@@ -115,3 +115,17 @@ cover:  "https://images.unsplash.com/photo-1502101872923-d48509bff386?ixlib=rb-1
 - 논문 스터디 발표
 
 <br/>
+
+#### 3월 14일 (토)
+
+- 알고리즘 스터디
+  - [문제집](https://www.acmicpc.net/problem/1766)
+  - [조합](https://www.acmicpc.net/problem/2407)
+
+<br/>
+
+#### 3월 15일 (일)
+
+- 학교 앞 고시텔로 이사했음
+
+<br/>
