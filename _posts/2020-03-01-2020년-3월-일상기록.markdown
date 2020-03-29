@@ -222,3 +222,9 @@ cover:  "https://images.unsplash.com/photo-1502101872923-d48509bff386?ixlib=rb-1
 - 논문 스터디 발표
 
 <br/>
+
+#### 3월 29일 (일)
+
+- 알고리즘 문제 해결 전략 26강 트라이 완강
+
+<br/>
