@@ -38,3 +38,12 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
 - 논문 스터디 발표
 
 <br/>
+
+#### 4월 4일 (토)
+
+- 알고리즘 스터디
+  - [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165)
+  - [위장](https://programmers.co.kr/learn/courses/30/lessons/42578)
+  - [탑](https://programmers.co.kr/learn/courses/30/lessons/42588)
+
+<br/>
