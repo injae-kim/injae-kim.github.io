@@ -47,3 +47,24 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
   - [탑](https://programmers.co.kr/learn/courses/30/lessons/42588)
 
 <br/>
+
+#### 4월 5일 (일)
+
+- PCB 회로 생산 라인에서 X-ray 이미지를 통한 납땜 과정에서의 Void 검출 관련 프로젝트 시작!
+  - [Robust automatic void detection in solder balls](https://www.researchgate.net/publication/224150120_Robust_automatic_void_detection_in_solder_balls) 논문 리딩
+  - [Void defect detection in ball grid array X-ray images using a new blob filter](https://www.semanticscholar.org/paper/Void-defect-detection-in-ball-grid-array-X-ray-a-Peng-Nam/1e9c6e76e2667e8466f5fbe75d6c4ea13f722ae1) 논문 리딩
+  - [Automated Void Detection in Solder Balls in the Presence of Vias and Other Artifacts](https://www.semanticscholar.org/paper/Automated-Void-Detection-in-Solder-Balls-in-the-of-Said-Bennett/19ae5b60520e18eeabc2926c01c79f7f6be4354c) 논문 리딩
+  - [VOID REGION SEGMENTATION IN BALL GRID ARRAY USING U-NET APPROACH AND SYNTHETIC DATA](https://arxiv.org/pdf/1907.04222.pdf) 논문 리딩
+- Anomaly Detection 분야 자료 조사
+  - [AnoGAN을 이용한 철강 소재 결함 검출](https://www.slideshare.net/HYEJINLIM10/anogan-ai-127348006)
+  - 산업 현장에서 비대칭 데이터 문제에 대한 이해
+  - AnoGAN 이 어떻게 Anomaly Detection 에 활용되고 있는지 에 대한 이해
+
+<br/>
+
+#### 4월 6일 (월)
+
+- 알고리즘 문제 해결전략 28장 DFS, 감시 카메라 설치 문제 공부
+- 편광카메라 도착, 렌즈 결합해서 첫 촬영 해봄
+
+<br/>
