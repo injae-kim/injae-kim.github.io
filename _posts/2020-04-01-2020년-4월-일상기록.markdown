@@ -81,3 +81,11 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
 - 알고리즘 문제 해결전략 29장 BFS, 어린이날 문제, 15-퍼즐 문제, 양방향 BFS, 하노이탑 문제 완강
 
 <br/>
+
+#### 4월 9일 (목)
+
+- 백준 3163번 떨어지는 개미 문제 풀이
+- 딥러닝 복습
+- [An efficient method of occluded solder ball segmentation for automated BGA void defect inspection using X-ray images](https://www.semanticscholar.org/paper/An-efficient-method-of-occluded-solder-ball-for-BGA-Nuanprasert-Baba/3d49419c464ca6fa5ee692809347c4eb4fb96693) 논문 리딩
+
+<br/>
