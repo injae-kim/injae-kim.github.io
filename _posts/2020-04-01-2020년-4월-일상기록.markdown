@@ -89,3 +89,10 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
 - [An efficient method of occluded solder ball segmentation for automated BGA void defect inspection using X-ray images](https://www.semanticscholar.org/paper/An-efficient-method-of-occluded-solder-ball-for-BGA-Nuanprasert-Baba/3d49419c464ca6fa5ee692809347c4eb4fb96693) 논문 리딩
 
 <br/>
+
+#### 4월 10일 (금)
+
+- [Adaptive Wing Loss for Robust Face Alignment via Heatmap Regression](https://arxiv.org/pdf/1904.07399.pdf) 논문 리딩
+- 알고리즘 문제해결전략 30장 최단경로, 다익스트라 알고리즘 공부
+
+<br/>
