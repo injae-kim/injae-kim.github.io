@@ -96,3 +96,10 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
 - 알고리즘 문제해결전략 30장 최단경로, 다익스트라 알고리즘 공부
 
 <br/>
+
+#### 4월 11일 (토)
+
+- 네이버 캠퍼스 핵데이 2020 코딩테스트, 3문제중 2문제 풀고 마지막 문제 테스트케이스 1개 빼고 해결! 합격했으면 좋겠다!
+- [프로그래머스 불량사용자](https://programmers.co.kr/learn/courses/30/lessons/64064) 알고리즘 문제 해결
+
+<br/>
