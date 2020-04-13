@@ -103,3 +103,9 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
 - [프로그래머스 불량사용자](https://programmers.co.kr/learn/courses/30/lessons/64064) 알고리즘 문제 해결
 
 <br/>
+
+#### 4월 13일 (월)
+
+- 알고리즘 문제 해결전략 30장 최단경로, 벨만-포드 알고리즘, 플로이드 알고리즘, 음주운전 단속 문제, 선거 공약 문제 해결
+
+<br/>
