@@ -133,6 +133,27 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
 
 <br/>
 
+#### 4월 17일 (금)
+
+- Face recognition, verification with Deep Learning 관련 공부
+  - [Deeplarning.ai 에서 제공하는 Face recognitio 관련 강의](https://www.youtube.com/watch?v=d2XB5-tuCWU)
+    - What is face recognition
+    - One Shot Learning
+    - Siamese Network
+    - Triplet loss
+    - FaceVerification
+  - [Deep Face Recognition: A Survey 논문 리딩](https://arxiv.org/pdf/1804.06655.pdf)
+    - DeepFace
+    - center loss
+    - a large-margin softmax loss
+    - SphereFace
+    - ArcFace
+
+- [위조된 JPEG 이미지 탐지 (Detecting fake JPEG images), Naver d2 사내 기술 세미나  공부](https://www.youtube.com/watch?v=wnhTclpgRfk&list=PLsFtzQAC8dDfps6qpOZ1QWsunBIAfqtvE&index=45)
+  - 흥미로운 연구주제와 재밌고 설득력있는 해결방법, 좋은 결과까지 갖춘 재밌는 연구!
+
+<br/>
+
 #### 4월 18일 (토)
 
 - 알고리즘 스터디
