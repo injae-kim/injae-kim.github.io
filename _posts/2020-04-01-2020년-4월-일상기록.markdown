@@ -161,3 +161,15 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
   - [아맞다우산](https://www.acmicpc.net/problem/17244) 문제 해결
 
 <br/>
+
+#### 4월 19일 (일)
+
+- BlackFlyS 카메라 SDK 사용법 에 관한 튜토리얼 문서 작성 완료
+- [200만 동접 게임을 위한 MySQL 샤딩](https://www.youtube.com/watch?v=8Eb_n7JA1yA) 공부, NHN Toast 제공
+  - 너무나 재밌는 강의! 200만 동접에도 장애 없이 버티는 MySQL 샤딩 방법에 대한 귀한 강의
+- [GANerated Hands for Real-Time 3D Hand Tracking - CVPR 2018 (Spotlight)](https://www.youtube.com/watch?v=pHyNrYRhvSg&t=8s) 논문 리딩
+  - Hand Skeleton Tracking 관련 CVPR 2018 Spolight 논문
+  - 실시간으로 빠르고 안정적으로 작동하는것을 볼 수 있다
+  - GAN 으로 데이터셋을 2배나 늘렸는데도 잘 작동하는게 인상깊음
+
+<br/>
