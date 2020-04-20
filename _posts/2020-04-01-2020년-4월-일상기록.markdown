@@ -173,3 +173,17 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
   - GAN 으로 데이터셋을 2배나 늘렸는데도 잘 작동하는게 인상깊음
 
 <br/>
+
+#### 4월 21일 (월)
+
+- GAN: Basic to Advanced
+  - GAN 공부
+  - WGAN 공부
+  - LSGAN 공부
+  - InfoGAN 공부
+  - StarGAN 공부
+  - GAN 의 Motivation 부터 Loss function 등의 개선 과정들과 논문을 보니 GAN 관련 연구 분야의 아주 기초적인 흐름을 이해할 수 있었다
+  - 통계, 확률, 선형대수 공부를 얼마전에 복습해둔 덕 분에 다행이도 논문 리딩을 간신히 해낼 수 있었다
+  - 논문의 어려운 수식들은 미디엄 등의 블로그에 증명 과정을 설명해둔 글이 많다, 유튜브에도 있어 많은 도움이 되었다
+
+<br/>
