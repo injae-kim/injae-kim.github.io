@@ -187,3 +187,5 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
   - 논문의 어려운 수식들은 미디엄 등의 블로그에 증명 과정을 설명해둔 글이 많다, 유튜브에도 있어 많은 도움이 되었다
 
 <br/>
+
+DSD
