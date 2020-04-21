@@ -188,4 +188,10 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
 
 <br/>
 
-DSD
+#### 4월 22일 (화)
+
+- [Deep Domain Adaptation Network for Face Recognition with Single Sample Per Person](https://www.youtube.com/watch?v=SYki6jXs5eI&list=PLsFtzQAC8dDfps6qpOZ1QWsunBIAfqtvE&index=25) 리딩
+- [LF-Net: Learning Local Features from Images](https://arxiv.org/pdf/1805.09662.pdf) 리딩
+- [Visual Geometry with Deep Learning](https://www.youtube.com/watch?v=87DcC8ksRHs&list=PLsFtzQAC8dDfps6qpOZ1QWsunBIAfqtvE&index=46)
+
+<br/>
