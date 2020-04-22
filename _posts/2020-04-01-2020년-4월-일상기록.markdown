@@ -174,7 +174,7 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
 
 <br/>
 
-#### 4월 21일 (월)
+#### 4월 20일 (월)
 
 - GAN: Basic to Advanced
   - GAN 공부
@@ -188,10 +188,24 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
 
 <br/>
 
-#### 4월 22일 (화)
+#### 4월 21일 (화)
 
 - [Deep Domain Adaptation Network for Face Recognition with Single Sample Per Person](https://www.youtube.com/watch?v=SYki6jXs5eI&list=PLsFtzQAC8dDfps6qpOZ1QWsunBIAfqtvE&index=25) 리딩
 - [LF-Net: Learning Local Features from Images](https://arxiv.org/pdf/1805.09662.pdf) 리딩
 - [Visual Geometry with Deep Learning](https://www.youtube.com/watch?v=87DcC8ksRHs&list=PLsFtzQAC8dDfps6qpOZ1QWsunBIAfqtvE&index=46)
+
+<br/>
+
+#### 4월 22일 (수)
+
+- [Synthesizing Pseudo-2.5D Content from Monocular Videos for Mixed Reality](https://www.youtube.com/watch?v=jJ0z4fb02VU&t=1779s)
+
+- [This Neural Network Learned To Look Around In Real Scenes](https://www.youtube.com/watch?v=nCpGStnayHk)
+
+- [Temporal Superpixels Based on Proximity-Weighted Patch Matching](https://www.youtube.com/watch?v=0RkWEZ3DkGo)
+
+- [Contour Constrained Superpixels for Image and Video Processing](https://www.youtube.com/watch?v=1aYzDwjOnls)
+
+- [Video Object Segmentation in Videos](https://www.youtube.com/watch?v=0X-J5kNNSZw)
 
 <br/>
