@@ -209,3 +209,10 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
 - [Video Object Segmentation in Videos](https://www.youtube.com/watch?v=0X-J5kNNSZw)
 
 <br/>
+
+#### 4월 23일 (목)
+
+- Bluetooth Indoor Positioning 관련 논문 조사, 방법론 조사
+- 서버/인프라 를 지탱하는 기술 책 1, 2장 읽음
+
+<br/>
