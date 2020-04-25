@@ -222,3 +222,12 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
 - 서버/인프라 를 지탱하는 기술 책 읽기 완료!
 
 <br/>
+
+#### 4월 25일 (토)
+
+- 알고리즘 스터디 with 2018 KAKAO BLIND 개발자 채용 코딩테스트
+  - [추석 트래픽](https://programmers.co.kr/learn/courses/30/lessons/17676) 해결
+  - [프렌즈 4블록](https://programmers.co.kr/learn/courses/30/lessons/17679) 해결
+  - [LRU 캐쉬](https://programmers.co.kr/learn/courses/30/lessons/17680) 해결
+
+<br/>
