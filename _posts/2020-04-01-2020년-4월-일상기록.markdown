@@ -231,3 +231,10 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
   - [LRU 캐쉬](https://programmers.co.kr/learn/courses/30/lessons/17680) 해결
 
 <br/>
+
+#### 4월 26일 (일)
+
+- 졸업 프로젝트 주제에 대해서 생각 해 봄
+  - 단안 카메라를 여러개 사용하는 상황에서 사람을 검출하고, 트래킹 하는 기술 의 적절한 산업에서의 적용 방안
+
+<br/>
