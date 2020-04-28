@@ -245,3 +245,9 @@ cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1
 - 관계형 데이터베이스 실전 입문 1 ~ 2강 읽음
 
 <br/>
+
+#### 4월 28일 (화)
+
+- 관계형 데이터베이스 실전 입문 3강 읽음
+
+<br/>
