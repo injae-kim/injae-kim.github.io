@@ -8,7 +8,7 @@ categories: Life
 cover:  "https://images.unsplash.com/photo-1501426026826-31c667bdf23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80"
 ---
 
-##  2020년 4월 일상 기록
+##  2020년 5월 일상 기록
 ---
 
 #### 5월 목표
