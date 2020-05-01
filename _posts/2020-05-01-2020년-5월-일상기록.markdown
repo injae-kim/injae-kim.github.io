@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "2020년 5월 일상 기록"
+date:   2020-05-01 10:00:00
+author: injae Kim
+categories: Life
+# tags:	Life 프로그래머 일상
+cover:  "https://images.unsplash.com/photo-1501426026826-31c667bdf23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80"
+---
+
+##  2020년 4월 일상 기록
+---
+
+#### 5월 목표
+
+- 영양제 꾸준히 챙겨먹기
+- 헬스와 식단관리
+- 꾸준한 코테준비
+
+<br/>
+
+#### 5월 1일 (금)
+
+- 동시성 프로그래밍 공부
+  - Petri Net
+- 프로그래머스 KAKAO 2018 BLIND 채용 문제 해결
+
+<br/>
+
