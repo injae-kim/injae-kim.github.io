@@ -27,3 +27,12 @@ cover:  "https://images.unsplash.com/photo-1501426026826-31c667bdf23d?ixlib=rb-1
 
 <br/>
 
+#### 5월 1일 (토)
+
+- 알고리즘 스터디
+  - 과제: 프로그래머스 KAKAO 2018 BLIND 채용 문제 전체 풀기 완료!
+  - [유닛 이동시키기](https://www.acmicpc.net/problem/2194) 문제 해결
+  - [징검다리 건너기](https://programmers.co.kr/learn/courses/30/lessons/64062) 문제 해결, 우선순위 큐와 유니온파인드로 해결했는데 슬라이딩 윈도우로 더 빠르게 해결할 수 있다.
+
+<br/>
+
