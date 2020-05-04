@@ -27,7 +27,7 @@ cover:  "https://images.unsplash.com/photo-1501426026826-31c667bdf23d?ixlib=rb-1
 
 <br/>
 
-#### 5월 1일 (토)
+#### 5월 2일 (토)
 
 - 알고리즘 스터디
   - 과제: 프로그래머스 KAKAO 2018 BLIND 채용 문제 전체 풀기 완료!
@@ -36,8 +36,14 @@ cover:  "https://images.unsplash.com/photo-1501426026826-31c667bdf23d?ixlib=rb-1
 
 <br/>
 
-#### 5월 2일 (일)
+#### 5월 3일 (일)
 
 - 동시성 프로그래밍 중간고사 공부
+
+<br/>
+
+#### 5월 4일 (월)
+
+- 관계형 데이터베이스 실전 입문 8강 학습
 
 <br/>
