@@ -9,7 +9,7 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: injae's devlog
+title: Injae's devlog
 subtitle: Love Code, Math, Engineering
 email: injae.kim.dev@gmail.com
 name: injae Kim
@@ -55,10 +55,19 @@ descriptions:
     desc: "아이디어로 접근하고 그림으로 이해하는 알고리즘 문제 풀이 방법"
 
   - cat: Robot_operating_system
-    desc: "ROS, OpenCV, Jetson tx2 for Robotics project"
+    desc: "ROS for robotics & embedded project"
 
   - cat: Life
     desc: "조금씩, 꾸준히, 매일"
+
+  - cat: Review
+    desc: "새롭게 배운 지식의 기록"
+
+  - cat: Dev
+    desc: "개발 관련 지식의 공유"
+
+  - cat: Experience
+    desc: "대학생 개발자의 다양한 경험과 성장 과정"
 
 # Social icons and sharing options
 #
