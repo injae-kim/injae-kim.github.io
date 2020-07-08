@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2020년 4월 일상 기록"
+title:  "2020년 4월 월간 회고"
 date:   2020-04-01 10:00:00
 author: injae Kim
 categories: Life
@@ -8,7 +8,7 @@ categories: Life
 cover:  "https://images.unsplash.com/photo-1467809941367-bbf259d44dd6?ixlib=rb-1.2.1&auto=format&fit=crop&w=890&q=80"
 ---
 
-##  2020년 4월 일상 기록
+##  2020년 4월 월간 회고
 ---
 
 #### 4월 목표

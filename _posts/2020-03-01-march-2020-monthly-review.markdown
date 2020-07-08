@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2020년 3월 일상 기록"
+title:  "2020년 3월 월간 회고"
 date:   2020-03-01 10:00:00
 author: injae Kim
 categories: Life
@@ -8,7 +8,7 @@ categories: Life
 cover:  "https://images.unsplash.com/photo-1502101872923-d48509bff386?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80"
 ---
 
-##  2020년 3월 일상 기록
+##  2020년 3월 월간 회고
 ---
 
 #### 3월 목표
