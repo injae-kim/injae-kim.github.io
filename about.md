@@ -122,7 +122,7 @@ permalink: /about/
 
 ---
 
-- ✉️injae.kim.dev@gmail.com
+- ✉️ injae.kim.dev@gmail.com
 
 <br/>
 
