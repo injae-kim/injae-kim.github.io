@@ -173,9 +173,16 @@ static inline void calc_load(unsigned long ticks)
 	static int count = LOAD_FREQ;
 
 	count -= ticks;
+    
+    // 타이머 인터럽트 발생 시
 	if (count < 0) {
+        // 타이머 초기화
 		count += LOAD_FREQ;
+        
+        // active 상태의 task 수 계산
 		active_tasks = count_active_tasks();
+        
+        // 1분, 5분, 15분 당 load average 를 계산하여 avenrun[] 배열에 저장
 		CALC_LOAD(avenrun[0], EXP_1, active_tasks);
 		CALC_LOAD(avenrun[1], EXP_5, active_tasks);
 		CALC_LOAD(avenrun[2], EXP_15, active_tasks);
@@ -261,7 +268,7 @@ $ sar
 
 위의 결과에서 `%user` 는 사용자 모드에서의 CPU 사용률 을 나타내며 `%system` 은 시스템 모드에서의 CPU 사용률 입니다.
 
-이때 `%user` 이 `%system` 이나 `%iowait` 에 비해 월등히 높은 것을 확ㅇ니할 수 있는데, 이는 사용자 모드의 CPU 사용률이 높다는 것 을 의미합니다.
+이때 `%user` 이 `%system` 이나 `%iowait` 에 비해 월등히 높은 것을 확인할 수 있는데, 이는 사용자 모드의 CPU 사용률이 높다는 것 을 의미합니다.
 
 Load Average 가 높고 사용자 모드의 CPU 사용률 수치가 높다면 부하의 원인은 CPU 자체의 리소스 부족이라고 판단할 수 있습니다.
 
