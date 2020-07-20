@@ -213,7 +213,7 @@ cover:  "https://images.unsplash.com/photo-1547886597-7e87e5288619?ixlib=rb-1.2.
 
 이때 우리는 직관적으로 10분 정도 기다리면 버스가 도착 할 확률이 어느정도 높아질 것 이라고 예상할 수 있지만, 우리는 엔지니어 인 만큼 푸아송 분포를 이용하여 확률을 계산 해 봅시다.
 
-| <img src="https://injae-kim.github.io/assets/Dev/2020-07-17-easy-to-understand-poisson-distribution/슬라이드11.JPG"  /> |
+| <img src="https://injae-kim.github.io/assets/Dev/2020-07-17-easy-to-understand-poisson-distribution/슬라이드11.jpg"  /> |
 | :----------------------------------------------------------: |
 | 평균적으로 10분 당 1대의 버스가 도착 할 때, 푸아송 분포로 계산한 10분 안에 버스가 도착 할 확률 |
 
@@ -225,7 +225,7 @@ cover:  "https://images.unsplash.com/photo-1547886597-7e87e5288619?ixlib=rb-1.2.
 
 과연 평균적으로 10분 당 1대의 버스가 도착 할 때 20분 안에 버스가 도착할 확률은 얼마나 될 까요?
 
-| <img src="https://injae-kim.github.io/assets/Dev/2020-07-17-easy-to-understand-poisson-distribution/슬라이드12.JPG"  /> |
+| <img src="https://injae-kim.github.io/assets/Dev/2020-07-17-easy-to-understand-poisson-distribution/슬라이드12.jpg"  /> |
 | :----------------------------------------------------------: |
 | 평균적으로 10분 당 1대의 버스가 도착 할 때, 푸아송 분포로 계산한 20분 안에 버스가 도착 할 확률 |
 
