@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "602번 버스는 언제 도착할까? 중학교 수학으로 완벽하게 이해하는 푸아송 분포와 활용"
+title:  "푸아송 분포의 아이디어와 유도 과정에 대한 구체적인 원리"
 date:   2020-07-17 21:00:00
 author: injae Kim
 categories: Dev
 cover:  "https://images.unsplash.com/photo-1547886597-7e87e5288619?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80"
 ---
 
-## 602번 버스는 언제 도착할까? 중학교 수학으로 완벽하게 이해하는 푸아송 분포와 활용
+## 푸아송 분포의 아이디어와 유도 과정에 대한 구체적인 원리 
 
 ---
 
