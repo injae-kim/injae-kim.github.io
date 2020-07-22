@@ -304,6 +304,8 @@ vector<int> kmpSearch(string& src, string& search){
 
 직접 구현해보면 다음과 같습니다.
 
+<br/>
+
 ```c++
 vector<int> getPartialMatchBruteForce(string& search){
     int m = search.size();
@@ -336,6 +338,8 @@ vector<int> getPartialMatchBruteForce(string& search){
 따라서 문자열 매칭 과정 과 본질적으로 다르지 않습니다.
 
 탐색 문자열의 접두, 접미사를 계산하는 과정에 KMP 알고리즘을 적용하면 다음과 같습니다.
+
+<br/>
 
 
 ```c++
