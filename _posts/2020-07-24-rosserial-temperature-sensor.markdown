@@ -78,7 +78,7 @@ ROS 는 Windows, Linux, Mac 등의 운영체제가 탑재된 머신에서 구동
 
 이 글의 최종 목표는 위처럼 MLX90640 열화상 센서를 사용하여 온도값을 실시간으로 받아온 후 ROS-serial 을 통해 ROS 가 구동되고 있는 랩탑에 전송하여 시각화 하는 것 입니다!
 
-사용된 임베디드 보드는 [NUCLEO-F746ZG](https://kr.element14.com/stmicroelectronics/nucleo-f746zg/dev-board-arduino-mbed-nucleo/dp/2517900?gclid=Cj0KCQjw6uT4BRD5ARIsADwJQ1-XiTQSzYRY3ICpgFqYvg1EGuqY39Z3GBWv79sFuQHgiqVhCXl88MQaAs4KEALw_wcB&mckv=slyE34KKf_dc|pcrid|220992348927|pkw|nucleo-f746zg|pmt|p|slid||product||pgrid|11606495397|ptaid|kwd-183016494481|&CMP=KNC-GKR-GEN-SKU-Focus-2517900) 로 약 3만원 정도에 판매되고 있으며 제조사는 STM, Core Architecture 은 Arm Cortex m7 입니다.
+사용된 임베디드 보드는 **NUCLEO-F746ZG** 로 약 3만원 정도에 판매되고 있으며 제조사는 STM, Core Architecture 은 Arm Cortex m7 입니다.
 
 열화상 센서는 [MLX90640](https://www.sparkfun.com/products/14843) 으로 약 7 ~ 8만원 정도에 판매되고 있으며 110도의 시야각, 32 x 24 픽셀의 영역에 대한 온도 정보를 받아올 수 있는 저가형 열화상 센서 입니다.
 
@@ -293,7 +293,7 @@ void msgPublish()
 
 <br/>
 
-여기서 주의할 점은, ROS-serial 을 사용하여 통신할 때 한번에 보낼 수 있는 데이터의 크기가 한정되어 있다는 점 입니다.
+**여기서 주의할 점은, ROS-serial 을 사용하여 통신할 때 한번에 보낼 수 있는 데이터의 크기가 한정되어 있다는 점 입니다.**
 
 | ![img](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/38ed6e94-0edc-4b51-90b0-56fd6783bae1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T072837Z&X-Amz-Expires=86400&X-Amz-Signature=cca8357142ebfbc4db7273967a492d65d032a59a19187590abd4697b695cba0b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22) |
 | :----------------------------------------------------------: |
@@ -305,9 +305,11 @@ ROS-serial 이 컴퓨팅 파워가 한정된 임베디드 보드에서 사용되
 
 ROS-serial 을 통해 데이터 송수신을 구현하면서 이러한 데이터 송수신 크기의 제한에 대해서 저도 처음엔 몰랐어서 많이 해맸습니다. 항상 공식문서를 꼼꼼히 읽도록 합시다!
 
-우리가 전송하려는 열화상 센서의 데이터는 32 x 24 배열이며 한 프레임에 총 768 개의 정수가 포함되어 있습니다.
+우리가 전송하려는 열화상 센서의 데이터는 32 x 24 배열이며 한 프레임에 총 768 개의 int형 데이터가 포함되어 있습니다.
 
 따라서 한 프레임에 512 byte 를 초과하게 되죠! 따라서 소스코드 상에서 이를 4개의 부분으로 나누어서 따로따로 ROS-serial 을 통해 온도값 데이터를 전송해주는 방식으로 데이터 크기 제한 문제를 해결하였습니다.
+
+<br/>
 
 ```c++
 // 온도 값을 담고있는 프레임을 4등분 하여 저장할 메시지, node 4개 선언
@@ -331,7 +333,7 @@ for(int i = 0; i < bufferSize; i++)
 }
 ```
 
-따라서 위처럼 소스코드에서 온도값이 저장된 배열을 4등분 하여 ROS 메시지에 저장한 후 따로 전송하는 것 을 확인할 수 있습니다.
+위처럼 소스코드에서 온도값이 저장된 배열을 4등분 하여 ROS 메시지에 저장한 후 따로 전송하는 것 을 확인할 수 있습니다.
 
 전체 소스코드는 [injae-kim/mlx90640-rosserial Git repo](https://github.com/injae-kim/mlx90640-rosserial) 에서 확인하실 수 있습니다.
 
