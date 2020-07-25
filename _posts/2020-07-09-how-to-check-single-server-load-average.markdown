@@ -192,26 +192,24 @@ static inline void calc_load(unsigned long ticks)
 
 전역변수 avenrun 배열에 **active_tasks** 의 수를 저장하고 있는것을 볼 수 있죠! 이는 리눅스에서 top 명령어를 실행하면 load average 가 1분, 5분, 15분 동안 측정된 결과값을 출력하는데, 왜 이렇게 출력되는지도 이제 알 수 있습니다.
 
-그렇다면, 조금더 자세히 들어가서 load average 가 측정하는 active_tasks 란 구체적으로 어떤 상태의 태스크 들을 의미할까요? 리눅스 커널의 sched.c 의 nr_active() 함수 에서 힌트를 찾을 수 있습니다.
+그렇다면, 조금더 자세히 들어가서 load average 가 측정하는 **active_tasks** 란 구체적으로 어떤 상태의 태스크 들을 의미할까요? 위의 **calc_load()** 함수에서 호출하고 있는 **count_active_tasks()** 함수에 그 힌트가 있습니다.
 
 ```c++
-// kernel / sched.c
-unsigned long nr_active(void)
+// kernel / timer.c
+static unsigned long count_active_tasks(void)
 {
-        unsigned long i, running = 0, uninterruptible = 0;
+	struct task_struct *p;
+	unsigned long nr = 0;
 
-        for_each_online_cpu(i) {
-	            // RUNNING 상태의 태스크 수
-                running += cpu_rq(i)->nr_running;	
-	            // UNINTERRUPTIBLE 상태의 태스크 수
-                uninterruptible += cpu_rq(i)->nr_uninterruptible;
-        }
-
-        if (unlikely((long)uninterruptible < 0))
-                uninterruptible = 0;
-		
-    	// RUNNING, UNINTERRUPTIBLE 상태의 태스크의 수의 합
-        return running + uninterruptible;
+	read_lock(&tasklist_lock);
+	for_each_task(p) {
+        // TASK_RUNNING 상태와 TASK_UNINTERRUPTIBLE 상태의 프로세스의 수 를 센다
+		if ((p->state == TASK_RUNNING ||
+		     (p->state & TASK_UNINTERRUPTIBLE)))
+			nr += FIXED_1;
+	}
+	read_unlock(&tasklist_lock);
+	return nr;
 }
 ```
 
