@@ -16,7 +16,7 @@ cover:  "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1
 
 오늘은 `ROS-serial` 로 임베디드 보드에서도 다양한 센서와 ROS 를 연동하여 사용하는 방법을 설명드리겠습니다.
 
-| ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4511d6f1-9903-4a77-a84b-a3fa35b1e8a1/intro1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T054106Z&X-Amz-Expires=86400&X-Amz-Signature=3fe58cfb4332ef5f139cb11ac3bae4dd57190778c3e5ca46ffcfc1914eaa0e6e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22intro1.jpg%22) |
+| ![](https://injae-kim.github.io/assets/ROS/2020-07-24-rosserial-temperature-sensor/intro1.jpg) |
 | :----------------------------------------------------------: |
 |                   rosserial 이 필요한 이유                   |
 
@@ -42,7 +42,7 @@ Ros-serial 과 그 사용법에 대해서 알아보겠습니다.
 
 ---
 
-| ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a98261f0-85c6-4c1b-8fe6-12413c4bfe11/intro2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T060320Z&X-Amz-Expires=86400&X-Amz-Signature=a5d549691010f29365f76fdfc9276ef0254344a94edfc05794b836731148f60f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22intro2.jpg%22) | ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3e45766b-40c2-4c60-840b-8ae64a8d03cf/intro3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T060322Z&X-Amz-Expires=86400&X-Amz-Signature=5f79232c634e2544215d836a0b655f6159ecc9d4278daf4f3dcf6a6f48b30047&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22intro3.jpg%22) |
+| ![](https://injae-kim.github.io/assets/ROS/2020-07-24-rosserial-temperature-sensor/intro2.jpg) | ![](https://injae-kim.github.io/assets/ROS/2020-07-24-rosserial-temperature-sensor/intro3.jpg) |
 | :----------------------------------------------------------: | ------------------------------------------------------------ |
 | 소형 임베디드 보드에서 xbee 통신과 Ros-serial 이용하여 ROS 시스템과 데이터 송수신을 하는 개요도 | 아두이노 등의 임베디드 보드에서도 사용가능한 Ros-serial      |
 
@@ -66,7 +66,7 @@ ROS 는 Windows, Linux, Mac 등의 운영체제가 탑재된 머신에서 구동
 
 ---
 
-| ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bc736901-3935-43f9-95c4-440d071f519d/intro4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T062012Z&X-Amz-Expires=86400&X-Amz-Signature=743b7ed5c0d59de03f8a931a07cff7b1f4cab52dce92e16b0b37dba80e924e6d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22intro4.jpg%22) |
+| ![](https://injae-kim.github.io/assets/ROS/2020-07-24-rosserial-temperature-sensor/intro4.jpg) |
 | :----------------------------------------------------------: |
 | Ros-serial 을 사용하여 데이터 송수신을 해볼 임베디드 보드와 열화상 센서 |
 
@@ -76,7 +76,7 @@ ROS 는 Windows, Linux, Mac 등의 운영체제가 탑재된 머신에서 구동
 | :----------------------------------------------------------: |
 | MLX90640 열화상 센서를 사용하여 온도값을 실시간으로 받아온 후 시각화 한 결과 |
 
-이 글의 최종 목표는 위처럼 MLX90640 열화상 센서를 사용하여 온도값을 실시간으로 받아온 후 ROS-serial 을 통해 ROS 가 구동되고 있는 랩탑에 전송하여 시각화 하는 것 입니다!
+**이 글의 최종 목표는 위처럼 MLX90640 열화상 센서를 사용하여 온도값을 실시간으로 받아온 후 ROS-serial 을 통해 ROS 가 구동되고 있는 랩탑에 전송하여 시각화 하는 것 입니다!**
 
 사용된 임베디드 보드는 **NUCLEO-F746ZG** 로 약 3만원 정도에 판매되고 있으며 제조사는 STM, Core Architecture 은 Arm Cortex m7 입니다.
 
@@ -108,7 +108,7 @@ Ros-serial 은 다양한 개발환경을 통해 사용 가능한데요, 개발 �
 
 [mbed](https://os.mbed.com/) 에 접속 후 웹 IDE 를 실행해 줍시다.
 
-| ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7c1a7039-bd66-456c-a7d3-0e421b8c28c6/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T064041Z&X-Amz-Expires=86400&X-Amz-Signature=033c46a9069f7a4dddaa125858816d3711a8216ae0e739168eee5c6dc465d90e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22) |
+| ![](https://injae-kim.github.io/assets/ROS/2020-07-24-rosserial-temperature-sensor/main1.png) |
 | :----------------------------------------------------------: |
 |            mbed 에서 사용할 임베디드 보드를 추가             |
 
@@ -116,7 +116,7 @@ Ros-serial 은 다양한 개발환경을 통해 사용 가능한데요, 개발 �
 
 <br/>
 
-| ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/35946e47-3696-4a79-912b-5be9f5d77440/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T064043Z&X-Amz-Expires=86400&X-Amz-Signature=2b30f87ab4115d86b7f5973dd28496be7ec8fdb4a1e162d11917d7acebf5bbab&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22) |
+| ![](https://injae-kim.github.io/assets/ROS/2020-07-24-rosserial-temperature-sensor/main2.png) |
 | :----------------------------------------------------------: |
 |    mbed 에서 공식적으로 지원하는 수 많은 임베디드 보드들     |
 
@@ -128,7 +128,7 @@ mbed 에서는 이미 아두이노나 Arm cortex 계열의 칩을 탑재하고 �
 
 사용할 임베디드 보드를 선택했다면, MLX90640 열화상 센서에서 온도 데이터값을 받아오기 위한 MLX90640 라이브러리를 import 해 줍시다. 
 
-| ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e971978f-1cfa-420a-973d-859506143feb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T065054Z&X-Amz-Expires=86400&X-Amz-Signature=635a53152dcfa92a61b5de6a6cca78090633ea4b67f39ccec5652241fee88147&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22) |
+| ![](https://injae-kim.github.io/assets/ROS/2020-07-24-rosserial-temperature-sensor/main3.png) |
 | :----------------------------------------------------------: |
 |           MLX 90640 열화상 센서 라이브러리 import            |
 
@@ -136,7 +136,7 @@ mbed 에서는 이미 아두이노나 Arm cortex 계열의 칩을 탑재하고 �
 
 <br/>
 
-| ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/27e2581a-a5a8-46ac-b574-e03c91e431f0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T065220Z&X-Amz-Expires=86400&X-Amz-Signature=b3cb0ead03e9f4903055359cfe0a2b450809768917515a3ecfdcc12a8184baf6&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22) |
+| ![](https://injae-kim.github.io/assets/ROS/2020-07-24-rosserial-temperature-sensor/main4.png) |
 | :----------------------------------------------------------: |
 |        mbed 에서 사용할 Ros-serial 라이브러리 import         |
 
@@ -156,7 +156,7 @@ mbed 에서는 이미 아두이노나 Arm cortex 계열의 칩을 탑재하고 �
 
 ---
 
-| ![img](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9289b984-870a-4b2c-a3d4-c4dc11cf308b/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T065724Z&X-Amz-Expires=86400&X-Amz-Signature=1f9e9e5539df5e59849a8abc318f6c6db44320eb7ca5a00c17a7cb1016c79180&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22) |
+| ![img](https://injae-kim.github.io/assets/ROS/2020-07-24-rosserial-temperature-sensor/main5.png) |
 | :----------------------------------------------------------: |
 | mbed 에서 ros-serial, 열화상 센서 관련 라이브러리가 import 완료된 후의 폴더 구조 |
 
@@ -295,7 +295,7 @@ void msgPublish()
 
 **여기서 주의할 점은, ROS-serial 을 사용하여 통신할 때 한번에 보낼 수 있는 데이터의 크기가 한정되어 있다는 점 입니다.**
 
-| ![img](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/38ed6e94-0edc-4b51-90b0-56fd6783bae1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T072837Z&X-Amz-Expires=86400&X-Amz-Signature=cca8357142ebfbc4db7273967a492d65d032a59a19187590abd4697b695cba0b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22) |
+| ![img](https://injae-kim.github.io/assets/ROS/2020-07-24-rosserial-temperature-sensor/main6.png) |
 | :----------------------------------------------------------: |
 | ROS-serial 공식 문서에서도 확인할 수 있는 송수신 데이터 크기의 제한 |
 
@@ -427,7 +427,7 @@ ROS 에서 OpenCV 를 사용하는 방법은 제 블로그의 [포스트](https:
 
 <br/>
 
-| ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b3767715-9619-4ab2-a766-8922c8c92202/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T074904Z&X-Amz-Expires=86400&X-Amz-Signature=15a1035386209d28d62fac88d178415b6ea3686d2d9a2d8a19667a39f172cbee&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22) | ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4d61924e-daa4-4f3b-ad94-2f7ff3eb0049/1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200724T074951Z&X-Amz-Expires=86400&X-Amz-Signature=567cc6ec09562d580764ea59b4a88e0ec6380d47d640d07ee244ab78720c3d91&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%221.png%22) |
+| ![](https://injae-kim.github.io/assets/ROS/2020-07-24-rosserial-temperature-sensor/result1.png) | ![](https://injae-kim.github.io/assets/ROS/2020-07-24-rosserial-temperature-sensor/result2.png) |
 | :----------------------------------------------------------: | ------------------------------------------------------------ |
 |                   뜨거운 물을 담은 텀블러                    | MLX90640 열화상 센서로 뜨거운 물을 담은 텀블러를 촬영한 후 온도 값 데이터를 시각화 한 결과 |
 
