@@ -28,8 +28,7 @@ permalink: /about/
 심사숙고하여 작성한 소스코드와 문서가 만드는 가치를 믿습니다.
 
 프로그래밍 언어와 프레임워크, 라이브러리는 문제를 해결하는데 필요한 하나의 도구라고 생각합니다.<br/>
-알고리즘과 수학, 운영체제에 대한 이해와 컴퓨터 공학의 기본기가 중요하다고 생각합니다.<br/>
-새로나온 프레임워크 만 무작정 따라가기 보다는 목적에 따라서 필요할 때 그 기술을 내 것 으로 만드는데 드는 러닝 커브를 줄이는데 집중합니다.<br/>
+알고리즘과 수학, 운영체제에 대한 이해와 컴퓨터 공학의 기본기가 중요하다고 생각합니다.
 
 
 코드안에만 갇혀있는 개발자 보다 현실의 문제들을 해결하는 엔지니어를 추구합니다.
@@ -69,25 +68,21 @@ permalink: /about/
 ---
 
 - **동국대학교 프로그래밍 경진대회 장려상 - 2018**
-
 - **고요한택시: 청각장애인이 운행하는 고요한 택시 애플리케이션**<br/>
   [2019 Enactus 국내대회 우승](https://www.venturesquare.net/786727)<br/>
   [2019 Enactus WorldCup Semi-Final Round 3위](https://enactus.org/worldcup/results-2014/)
-
 - **쉐코: 컴퓨터비전 기반 해양 방제 로봇**<br/>
+[5억원 규모 투자 유치 (SK 이노베이션, SV2 임팩트 파트너링)](http://www.speconomy.com/news/newsview.php?ncode=1065579099270836)<br/>
   2019 삼성 투마로우 솔루션 Final Round 출전<br/>
   [현대 제로원데이 스타트업 전시참여](http://zer01neday.com/929/)<br/>
   [4개 항만공사 공동주최 창업 아이디어 해커톤 SPLASH 대상](https://injae-kim.github.io/assets/about_me/항만공사해커톤.jpg), [관련기사](http://ilyo.co.kr/?ac=article_view&entry_id=348400)<br/>
   [한국중부발전 주최 청년 에너지드림 리그 최우수](https://injae-kim.github.io/assets/about_me/중부발전에너지드림리그.jpg)<br/>
-  사회적 기업 육성사업 선정, [청년 창업 사관학교](https://www.venturesquare.net/794557) 지원사업 선정<br/>
+사회적 기업 육성사업 선정, [청년 창업 사관학교](https://www.venturesquare.net/794557) 지원사업 선정<br/>
   [2019 충북창조경제혁신센터 하드웨어 상품화 엔지니어링 지원사업 선정](https://www.youtube.com/watch?v=V6j5l5dnHDc)
-
 - **군위군 문화관광 활성화을 위한 관학협력사업 과제 최우수상 - 2018**<br/>
   블록체인 기반 홍보 콘텐츠 제공에 대한 보상 플랫폼 개발<br/>
   동국대학교 ICIP & 캡스톤 디자인 결과발표 최우수상, [관련 기사](https://www.kyongbuk.co.kr/news/articleView.html?idxno=1049167)
-
 - **동국대학교 창업장학생 선정 - 2018**
-
 - **동국대학교 창업 캡스톤 디자인 최우수상 - 2020**<br/>
   데이터셋 레이블링 자동화 툴 개발 및 사업화
 
