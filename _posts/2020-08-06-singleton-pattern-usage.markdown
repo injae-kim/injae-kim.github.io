@@ -27,6 +27,7 @@ cover:  "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixlib=rb-1
 ## 쉽게 이해하는 싱글톤 패턴이 필요한 이유
 
 ---
+
 | ![](https://injae-kim.github.io/assets/Dev/2020-08-06-singleton-pattern-usage/슬라이드1.JPG) |
 | :----------------------------------------------------------: |
 |   사무실에서 프린트 1대 를 여러 사람이 함께 사용하는 경우    |
