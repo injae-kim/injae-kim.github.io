@@ -115,6 +115,7 @@ WebGL 기반 오픈소스 웹 게임 엔진인 Phaser.js 와 Node.js, Socket 통
 
 - [출원번호: 10-2019-0063063호] 해양방제장치 특허 발명 - 2020
 - [출원번호: 10-2019-0063075호] 해양방제장치 특허 발명 - 2020
+- AI Robotics KR 페이스북 그룹 (멤버: 3.7천명) 운영진 - 2020
 - [서버에 걸리는 부하, 추측하지 말고 계측하자](https://injae-kim.github.io/dev/2020/07/09/how-to-check-single-server-load-average.html) 글 작성 - 2020
 - [푸아송 분포의 아이디어와 유도 과정에 대한 구체적인 원리](https://injae-kim.github.io/dev/2020/07/17/easy-to-understand-poisson-distribution.html) 글 작성 - 2020
 - 동국대학교 심화프로그래밍 강의 담당 조교 - 2018
