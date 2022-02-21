@@ -20,7 +20,7 @@ html, body {
 }
 
 blockquote {
-	background-color: #EEEEEE;
+	background-color: #F5F6FA;
 	margin: 0;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -40,11 +40,11 @@ ul.default {
 }
 
 code {
-	// background-color: #eee;
-	background-color: #eaeaea;
+	background-color: #E9ECEF;
 	display: inline-block;
 	border-radius: 3px;
 	padding: 0 3px;
+	font-size: 85%;
 	font-family: $hljs-font-family;
 }
 
